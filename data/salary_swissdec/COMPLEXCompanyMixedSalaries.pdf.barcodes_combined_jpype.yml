@@ -1,0 +1,18 @@
+- content: <?xml version="1.0" encoding="UTF-8"?><T xmlns="http://www.swissdec.ch/schema/sd/20200220/SalaryDeclarationTxAB"
+    SID="000" SysV="001"><Company UID-BFS="CHE-123.123.123" Person="Paula Nestler"
+    HR-RC-Name="COMPLEX Elektronik AG" ZIP="3600" CL="Abteilung Steuerungen" Street="Eigerweg
+    6" Postbox="124" City="Thun" Phone="033 238 49 71"/><PersonID Lastname="Aebi"
+    Firstname="Anna" ZIP="3000" CL="" Street="LÃ¤nggassstrasse 26" Postbox="690" Locality=""
+    City="Bern 9" Country=""><SV-AS-Nr>123.4567.8901.28</SV-AS-Nr></PersonID><A><DocID>1</DocID><Period><from>2016-10-01</from><until>2016-11-30</until></Period><Income>48118.70</Income><GrossIncome>68000.00</GrossIncome><NetIncome>56343.00</NetIncome></A></T>
+  format: PDF_417
+  sources:
+  - 0
+- content: <?xml version="1.0" encoding="UTF-8"?><T xmlns="http://www.swissdec.ch/schema/sd/20200220/SalaryDeclarationTxAB"
+    SID="000" SysV="001"><Company UID-BFS="CHE-123.123.123" Person="Paula Nestler"
+    HR-RC-Name="COMPLEX Elektronik AG" ZIP="3600" CL="Abteilung Steuerungen" Street="Eigerweg
+    6" Postbox="124" City="Thun" Phone="033 238 49 71"/><PersonID Lastname="Aebi"
+    Firstname="Anna" ZIP="3000" CL="" Street="LÃ¤nggassstrasse 26" Postbox="690" Locality=""
+    City="Bern 9" Country=""><SV-AS-Nr>123.4567.8901.28</SV-AS-Nr></PersonID><A><DocID>2</DocID><Period><from>2016-12-01</from><until>2016-12-31</until></Period><Income>48110.00</Income><GrossIncome>67000.00</GrossIncome><NetIncome>56000.11</NetIncome></A></T>
+  format: PDF_417
+  sources:
+  - 1

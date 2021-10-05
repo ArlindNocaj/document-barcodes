@@ -1,0 +1,78 @@
+- format: PDF_417
+  num_candidate: 2
+  page: 0
+  points:
+  - - 0.0678069639584606
+    - 0.22689317592859198
+  - - 0.3196904907350845
+    - 0.22689317592859198
+  - - 0.3196904907350845
+    - 0.3319896343219119
+  - - 0.0678069639584606
+    - 0.3319896343219119
+  raw: "´cý¸z\0\x02V\x01\x03\0\x01\0\x01PK\x03\x04\x14\0\b\b\b\0év\x03Q\0\0\0\0\0\0\
+    \0\0\0\0\0\0\x04\0\0\0txabM\x92Ýnâ0\x10\N_Åò}b;¡!¬\x1CWá¯EbYÔÐjÕ;\x13Ü\x105±+Û,ð>û&ûb;\t\
+    Ðö\"Îñ\x99\x19Ïç\x91ùý©mÐ\x1Fe]mt\x86YH1Rº4»ZW\x19~ÞÌ\x83\x14ß\v¾A\x90¦]\x86÷Þ\x7F\
+    ü äx<\x86îX;·SeXî\x89+÷ª\x95ÄíHD#J£\x88\x92B6Ò\x9E§ª\x84\x9Fôpúæ\x94\x8F1*\x16\
+    Ó\fS\nm\x8A³{é$Ã\x82OLû!õ\x19=/¦Áx^dxò8\vX\x14\x87×\x0F£5 v\x84kyh$Z)ç\ee1z|\n\
+    \x9E&ÁJ¶\nj~ý\\/g¿Ñ¬QïÞ\x1A]¿£ü\x01£×Å:ÃqÒµ\x9C,3\x9Co½ª\x9B\x83®PáÕAYPJ\x03\x8D\
+    ·Jù\fÏêJÙ£ªP\x02=\x8Dó[s\x82±D\x03(®ý9Ã\x9Bý\x01²×{£¡#\x8Dc\x14Å)\x1A\x8CÐ\x90\
+    a\"ø\Nr1EKé¼î©rµ­1\x9A×öÓÐZÞ¨è\x8Dê\v`ùï¯®*é\x9Có\x16V\N¢ï$É\b\n\x96¦\x94MOs£\x1A\
+    +«Ñ\bvæ ½í\x02\x82\x17/A^\x04++º\x19\x0Eî\x92a\x98\x8E(\v£\x94\x93Ï\x10'7bÁsÁ§¦\x04\
+    Å8¹\x88î:µÙ\tþfM+\"Ê\x92\x80Ñ\x80B¼78ôª\x9B«Ï\x82\x98rrqúSûÂ\x05<¥V\x89AÊX\x1A\
+    \x0E!ájð\ak\x9C»n\x92\x14Æ\x10R\x88~wùJù«¼KâAÜ'|y\x9C\0/Ù\x88ÿPK\a\bK¦nJÎ\x01\0\
+    \0Á\x02\0\0PK\x01\x02\x14\0\x14\0\b\b\b\0év\x03QK¦nJÎ\x01\0\0Á\x02\0\0\x04\0\0\
+    \0\0\0\0\0\0\0\0\0\0\0\0\0\0\0txabPK\x05\x06\0\0\0\0\x01\0\x01\02\0\0\0\0\x02\0\
+    \0\0\0"
+  resultMetadata:
+    ERROR_CORRECTION_LEVEL: '2'
+    PDF417_EXTRA_METADATA:
+      addressee: None
+      checksum: -1
+      fileId: None
+      fileName: None
+      fileSize: -1
+      optionalData: None
+      segmentCount: -1
+      segmentIndex: 0
+      sender: None
+      timestamp: -1
+- format: PDF_417
+  num_candidate: 2
+  page: 1
+  points:
+  - - 0.0678069639584606
+    - 0.22689317592859198
+  - - 0.3196904907350845
+    - 0.22689317592859198
+  - - 0.3196904907350845
+    - 0.3319896343219119
+  - - 0.0678069639584606
+    - 0.3319896343219119
+  raw: "´cþCz\0\x02S\x01\x03\0\x01\0\x01PK\x03\x04\x14\0\b\b\b\0év\x03Q\0\0\0\0\0\0\
+    \0\0\0\0\0\0\x04\0\0\0txabM\x92Ûr\x9B0\x10\x86_E£{\x90\x10\x0E¶;B\x19|J<ãºLp2\x9D\
+    ÞÉXÅL@ÊHrm¿Oß¤/Ö\x05\x1F\x92\v`õïáÿXà\x8F§¶A\x7F\x94uµÑ)\x8EB\x8A\x91Ò¥ÙÕºJñëf\x11\
+    \x8Cð£à\e\x04eÚ¥xïýÇ7B\x8EÇcè\x8Eµs;U\x86å\x9E¸r¯ZIÜ\x8E0Ê(e\x8C\x92B6Ò\x9Egª\x84\
+    \x87ô0}sÊ&\x18\x15ËY\x8A)\x05\x9BâìÞº0Â\x82OMû!õ\x19½.gÁdQ¤xú<\x0F\"\x16\x87×\v\
+    £\x1C\x10;Â\\\x1E\x1A\x89ÖÊùFY\x8C\x9E_\x82\x97i°\x96­\x82\x9E\x1FßóÕü'\x9A7êÝ[£ëw\x94\
+    =aôk\x99§8N:Ëé*ÅÙÖ«º9è\n\x15^\x1D\x94\NHi ñV)\x9Fây]){T\x15JÀÓ8¿5'X\v\e@síÏ)Þì\x0F\
+    P\x9Dï\x8D\x06G\x1AÇ\x88Å#4\x18£a\x84\x89à\x17Êå\f­¤óº§ÊÔ¶ÆhQÛ» µ¼QÑ\eÕ'Àêß_]UÒ9ç-Ü\x15\
+    b_I\x9214¬L)\x9B\x9EæF5QV£1\x9CÌA{Û%\x04/Þ\x82¬\bÖVt;\x1C<$Ãp4¦QÈF\x9CÜS\x9CÜ\x88\
+    \x05Ï\x04\x9F\x99\x12\"ÆÉ%è^§6;Á\x7F[Ó\nF£\x04¾I@#Nz\x81\x83WÝÜõ\x18ô\x8BÒOí\e\
+    \x97ð+µJ\fFQDCJ9¹\nüÉ\x1Aç®\x87d\bkè³_U¾Vþ\x1A>$]A\x04ó?5N\x80\x97lÄ\x7FPK\a\b\
+    !'Î\aË\x01\0\0Á\x02\0\0PK\x01\x02\x14\0\x14\0\b\b\b\0év\x03Q!'Î\aË\x01\0\0Á\x02\
+    \0\0\x04\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0txabPK\x05\x06\0\0\0\0\x01\0\x01\02\0\
+    \0\0ý\x01\0\0\0\0"
+  resultMetadata:
+    ERROR_CORRECTION_LEVEL: '2'
+    PDF417_EXTRA_METADATA:
+      addressee: None
+      checksum: -1
+      fileId: None
+      fileName: None
+      fileSize: -1
+      optionalData: None
+      segmentCount: -1
+      segmentIndex: 0
+      sender: None
+      timestamp: -1

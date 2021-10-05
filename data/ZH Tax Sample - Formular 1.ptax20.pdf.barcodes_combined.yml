@@ -1,0 +1,200 @@
+- content: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<ssk:message minorVersion=\"\
+    3\" xmlns:ech07=\"http://www.ech.ch/xmlns/eCH-0007-f/6\" xmlns:ech08=\"http://www.ech.ch/xmlns/eCH-0008-f/3\"\
+    \ xmlns:ech10=\"http://www.ech.ch/xmlns/eCH-0010-f/6\" xmlns:ech11=\"http://www.ech.ch/xmlns/eCH-0011-f/8\"\
+    \ xmlns:ech44=\"http://www.ech.ch/xmlns/eCH-0044-f/4\" xmlns:ech46=\"http://www.ech.ch/xmlns/eCH-0046-f/4\"\
+    \ xmlns:ech97=\"http://www.ech.ch/xmlns/eCH-0097/3\" xmlns:ssk=\"http://www.ech.ch/xmlns/eCH-0119/3\"\
+    \ xmlns:zh=\"http://www.zh.ch/xmlns/zh-taxdeclaration-it/ech3-0/6\" xmlns:xsi=\"\
+    http://www.w3.org/2001/XMLSchema-instance\">\n\t<ssk:header>\n\t\t<ssk:cantonExtension>\n\
+    \t\t\t<zh:headerExtension>\n\t\t\t\t<zh:hiddenData>\n\t\t\t\t\t<zh:selfEmploymentP1>false</zh:selfEmploymentP1>\n\
+    \t\t\t\t\t<zh:noSelfEmploymentP1>true</zh:noSelfEmploymentP1>\n\t\t\t\t\t<zh:selfEmploymentP2>false</zh:selfEmploymentP2>\n\
+    \t\t\t\t\t<zh:noSelfEmploymentP2>true</zh:noSelfEmploymentP2>\n\t\t\t\t\t<zh:relevantCooperation>false</zh:relevantCooperation>\n\
+    \t\t\t\t</zh:hiddenData>\n\t\t\t\t<zh:approvalReceipt>\n\t\t\t\t\t<zh:roundedTaxableIncome>\n\
+    \t\t\t\t\t\t<ssk:cantonalTax>104300</ssk:cantonalTax>\n\t\t\t\t\t\t<ssk:federalTax>100500</ssk:federalTax>\n\
+    \t\t\t\t\t</zh:roundedTaxableIncome>\n\t\t\t\t\t<zh:roundedRatedeterminingIncome>\n\
+    \t\t\t\t\t\t<ssk:cantonalTax>104300</ssk:cantonalTax>\n\t\t\t\t\t\t<ssk:federalTax>100500</ssk:federalTax>\n\
+    \t\t\t\t\t</zh:roundedRatedeterminingIncome>\n\t\t\t\t\t<zh:roundedTaxableQualifiedInvestments>0</zh:roundedTaxableQualifiedInvestments>\n\
+    \t\t\t\t\t<zh:roundedTaxableAsset>0</zh:roundedTaxableAsset>\n\t\t\t\t\t<zh:roundedRatedeterminingAsset>0</zh:roundedRatedeterminingAsset>\n\
+    \t\t\t\t</zh:approvalReceipt>\n\t\t\t\t<zh:sourceSystem>\n\t\t\t\t\t<zh:system>Private\
+    \ Tax</zh:system>\n\t\t\t\t\t<zh:version>2020-1.18.0</zh:version>\n\t\t\t\t\t\
+    <zh:operatingSystem>Windows 10</zh:operatingSystem>\n\t\t\t\t\t<zh:date>2021-04-15</zh:date>\n\
+    \t\t\t\t</zh:sourceSystem>\n\t\t\t\t<zh:documentList>\n\t\t\t\t\t<zh:documentType>01</zh:documentType>\n\
+    \t\t\t\t\t<zh:documentDeliveryMethod>01</zh:documentDeliveryMethod>\n\t\t\t\t\t\
+    <zh:documentDescription>Lohnausweis(e) pro Arbeitgeber</zh:documentDescription>\n\
+    \t\t\t\t</zh:documentList>\n\t\t\t\t<zh:documentList>\n\t\t\t\t\t<zh:documentType>02</zh:documentType>\n\
+    \t\t\t\t\t<zh:documentDeliveryMethod>01</zh:documentDeliveryMethod>\n\t\t\t\t\t\
+    <zh:documentDescription>Lohnausweise Nebenerwerb</zh:documentDescription>\n\t\t\
+    \t\t</zh:documentList>\n\t\t\t\t<zh:versionFK>2020-8c490-ad828</zh:versionFK>\n\
+    \t\t\t\t<zh:clientPasswordProtection>false</zh:clientPasswordProtection>\n\t\t\
+    \t</zh:headerExtension>\n\t\t\t<ssk:canton>ZH</ssk:canton>\n\t\t</ssk:cantonExtension>\n\
+    \t\t<ssk:transactionDate>2021-06-09T10:40:40.460+02:00</ssk:transactionDate>\n\
+    \t\t<ssk:taxPeriod>2020</ssk:taxPeriod>\n\t\t<ssk:periodFrom>2020-01-01</ssk:periodFrom>\n\
+    \t\t<ssk:periodTo>2020-12-31</ssk:periodTo>\n\t\t<ssk:canton>ZH</ssk:canton>\n\
+    \t\t<ssk:source>0</ssk:source>\n\t\t<ssk:sourceDescription>Private Tax</ssk:sourceDescription>\n\
+    \t</ssk:header>\n\t<ssk:content>\n\t\t<ssk:mainForm>\n\t\t\t<ssk:personDataPartner1>\n\
+    \t\t\t\t<ssk:partnerPersonIdentification>\n\t\t\t\t\t<ssk:officialName>Mustermann</ssk:officialName>\n\
+    \t\t\t\t\t<ssk:firstName>Max</ssk:firstName>\n\t\t\t\t\t<ssk:vn>7564945010782</ssk:vn>\n\
+    \t\t\t\t\t<ssk:otherPersonId>\n\t\t\t\t\t\t<ech44:personIdCategory>MU.21.pid</ech44:personIdCategory>\n\
+    \t\t\t\t\t\t<ech44:personId>123456</ech44:personId>\n\t\t\t\t\t</ssk:otherPersonId>\n\
+    \t\t\t\t</ssk:partnerPersonIdentification>\n\t\t\t\t<ssk:addressInformation>\n\
+    \t\t\t\t\t<ech46:postalAddress>\n\t\t\t\t\t\t<ech10:addressInformation>\n\t\t\t\
+    \t\t\t\t<ech10:street>Musterstrasse</ech10:street>\n\t\t\t\t\t\t\t<ech10:houseNumber>15</ech10:houseNumber>\n\
+    \t\t\t\t\t\t\t<ech10:town>Zurich</ech10:town>\n\t\t\t\t\t\t\t<ech10:swissZipCode>8001</ech10:swissZipCode>\n\
+    \t\t\t\t\t\t</ech10:addressInformation>\n\t\t\t\t\t</ech46:postalAddress>\n\t\t\
+    \t\t</ssk:addressInformation>\n\t\t\t\t<ssk:maritalStatusTax>\n\t\t\t\t\t<ech11:maritalStatus>2</ech11:maritalStatus>\n\
+    \t\t\t\t</ssk:maritalStatusTax>\n\t\t\t\t<ssk:religion>711</ssk:religion>\n\t\t\
+    \t\t<ssk:paymentPension>false</ssk:paymentPension>\n\t\t\t\t<ssk:taxMunicipality>\n\
+    \t\t\t\t\t<ech07:municipalityId>21</ech07:municipalityId>\n\t\t\t\t\t<ech07:municipalityName>Adlikon</ech07:municipalityName>\n\
+    \t\t\t\t</ssk:taxMunicipality>\n\t\t\t</ssk:personDataPartner1>\n\t\t\t<ssk:personDataPartner2>\n\
+    \t\t\t\t<ssk:personIdentification>\n\t\t\t\t\t<ech44:officialName>Musterfrau</ech44:officialName>\n\
+    \t\t\t\t\t<ech44:firstName>Tamara</ech44:firstName>\n\t\t\t\t</ssk:personIdentification>\n\
+    \t\t\t\t<ssk:religion>711</ssk:religion>\n\t\t\t\t<ssk:paymentPension>false</ssk:paymentPension>\n\
+    \t\t\t</ssk:personDataPartner2>\n\t\t\t<ssk:childData>\n\t\t\t\t<ssk:personIdentification>\n\
+    \t\t\t\t\t<ech44:officialName>Mustermann</ech44:officialName>\n\t\t\t\t\t<ech44:firstName>Tim</ech44:firstName>\n\
+    \t\t\t\t\t<ech44:dateOfBirth>\n\t\t\t\t\t\t<ech44:yearMonthDay>2015-01-01</ech44:yearMonthDay>\n\
+    \t\t\t\t\t</ech44:dateOfBirth>\n\t\t\t\t</ssk:personIdentification>\n\t\t\t\t\
+    <ssk:cantonExtension>\n\t\t\t\t\t<zh:childDataInhouseExtension>\n\t\t\t\t\t\t\
+    <zh:classificationDetail>\n\t\t\t\t\t\t\t<zh:mutualChildCouple>true</zh:mutualChildCouple>\n\
+    \t\t\t\t\t\t</zh:classificationDetail>\n\t\t\t\t\t</zh:childDataInhouseExtension>\n\
+    \t\t\t\t\t<ssk:canton>ZH</ssk:canton>\n\t\t\t\t</ssk:cantonExtension>\n\t\t\t\t\
+    <ssk:homeOrExternal>false</ssk:homeOrExternal>\n\t\t\t\t<ssk:alimonyOtherPerson>false</ssk:alimonyOtherPerson>\n\
+    \t\t\t</ssk:childData>\n\t\t\t<ssk:childData>\n\t\t\t\t<ssk:personIdentification>\n\
+    \t\t\t\t\t<ech44:officialName>Musterfrau</ech44:officialName>\n\t\t\t\t\t<ech44:firstName>Noel</ech44:firstName>\n\
+    \t\t\t\t\t<ech44:dateOfBirth>\n\t\t\t\t\t\t<ech44:yearMonthDay>2017-01-02</ech44:yearMonthDay>\n\
+    \t\t\t\t\t</ech44:dateOfBirth>\n\t\t\t\t</ssk:personIdentification>\n\t\t\t\t\
+    <ssk:cantonExtension>\n\t\t\t\t\t<zh:childDataInhouseExtension>\n\t\t\t\t\t\t\
+    <zh:classificationDetail>\n\t\t\t\t\t\t\t<zh:mutualChildCouple>true</zh:mutualChildCouple>\n\
+    \t\t\t\t\t\t</zh:classificationDetail>\n\t\t\t\t\t</zh:childDataInhouseExtension>\n\
+    \t\t\t\t\t<ssk:canton>ZH</ssk:canton>\n\t\t\t\t</ssk:cantonExtension>\n\t\t\t\t\
+    <ssk:homeOrExternal>false</ssk:homeOrExternal>\n\t\t\t\t<ssk:alimonyOtherPerson>false</ssk:alimonyOtherPerson>\n\
+    \t\t\t</ssk:childData>\n\t\t\t<ssk:revenue>\n\t\t\t\t<ssk:employedMainRevenue>\n\
+    \t\t\t\t\t<ssk:partnerAmount1>63250</ssk:partnerAmount1>\n\t\t\t\t\t<ssk:partnerAmount2>72150</ssk:partnerAmount2>\n\
+    \t\t\t\t</ssk:employedMainRevenue>\n\t\t\t\t<ssk:employedSidelineRevenue>\n\t\t\
+    \t\t\t<ssk:partnerAmount1>5000</ssk:partnerAmount1>\n\t\t\t\t\t<ssk:partnerAmount2>6500</ssk:partnerAmount2>\n\
+    \t\t\t\t</ssk:employedSidelineRevenue>\n\t\t\t\t<ssk:cantonExtension>\n\t\t\t\t\
+    \t<zh:revenueExtension>\n\t\t\t\t\t\t<zh:employedMainRevenueDetailP1>\n\t\t\t\t\
+    \t\t\t<zh:beginDate>2020-01-01</zh:beginDate>\n\t\t\t\t\t\t\t<zh:endDate>2020-12-31</zh:endDate>\n\
+    \t\t\t\t\t\t\t<zh:entrepreneur>Musterfirma</zh:entrepreneur>\n\t\t\t\t\t\t\t<zh:revenue>63250</zh:revenue>\n\
+    \t\t\t\t\t\t</zh:employedMainRevenueDetailP1>\n\t\t\t\t\t\t<zh:employedMainRevenueDetailP2>\n\
+    \t\t\t\t\t\t\t<zh:beginDate>2020-01-01</zh:beginDate>\n\t\t\t\t\t\t\t<zh:endDate>2020-12-31</zh:endDate>\n\
+    \t\t\t\t\t\t\t<zh:entrepreneur>Musterfirma 2</zh:entrepreneur>\n\t\t\t\t\t\t\t\
+    <zh:revenue>72150</zh:revenue>\n\t\t\t\t\t\t</zh:employedMainRevenueDetailP2>\n\
+    \t\t\t\t\t\t<zh:employedSidelineRevenueDetailP1>\n\t\t\t\t\t\t\t<zh:beginDate>2020-01-01</zh:beginDate>\n\
+    \t\t\t\t\t\t\t<zh:endDate>2020-12-31</zh:endDate>\n\t\t\t\t\t\t\t<zh:description>Testfirma\
+    \ A</zh:description>\n\t\t\t\t\t\t\t<zh:revenue>5000</zh:revenue>\n\t\t\t\t\t\t\
+    </zh:employedSidelineRevenueDetailP1>\n\t\t\t\t\t\t<zh:employedSidelineRevenueDetailP2>\n\
+    \t\t\t\t\t\t\t<zh:beginDate>2020-01-01</zh:beginDate>\n\t\t\t\t\t\t\t<zh:endDate>2020-12-31</zh:endDate>\n\
+    \t\t\t\t\t\t\t<zh:description>Testfirma B</zh:description>\n\t\t\t\t\t\t\t<zh:revenue>6500</zh:revenue>\n\
+    \t\t\t\t\t\t</zh:employedSidelineRevenueDetailP2>\n\t\t\t\t\t\t<zh:relevantCooperationMainP1>false</zh:relevantCooperationMainP1>\n\
+    \t\t\t\t\t\t<zh:relevantCooperationMainP2>false</zh:relevantCooperationMainP2>\n\
+    \t\t\t\t\t\t<zh:relevantCooperationSidelineP1>false</zh:relevantCooperationSidelineP1>\n\
+    \t\t\t\t\t\t<zh:relevantCooperationSidelineP2>false</zh:relevantCooperationSidelineP2>\n\
+    \t\t\t\t\t</zh:revenueExtension>\n\t\t\t\t\t<ssk:canton>ZH</ssk:canton>\n\t\t\t\
+    \t</ssk:cantonExtension>\n\t\t\t\t<ssk:securitiesRevenue>\n\t\t\t\t\t<ssk:cantonalTax>0</ssk:cantonalTax>\n\
+    \t\t\t\t\t<ssk:federalTax>0</ssk:federalTax>\n\t\t\t\t</ssk:securitiesRevenue>\n\
+    \t\t\t\t<ssk:totalAmountRevenue>\n\t\t\t\t\t<ssk:cantonalTax>146900</ssk:cantonalTax>\n\
+    \t\t\t\t\t<ssk:federalTax>146900</ssk:federalTax>\n\t\t\t\t</ssk:totalAmountRevenue>\n\
+    \t\t\t</ssk:revenue>\n\t\t\t<ssk:deduction>\n\t\t\t\t<ssk:jobExpensesPartner1>\n\
+    \t\t\t\t\t<ssk:cantonalTax>5100</ssk:cantonalTax>\n\t\t\t\t\t<ssk:federalTax>5100</ssk:federalTax>\n\
+    \t\t\t\t</ssk:jobExpensesPartner1>\n\t\t\t\t<ssk:jobExpensesPartner2>\n\t\t\t\t\
+    \t<ssk:cantonalTax>5565</ssk:cantonalTax>\n\t\t\t\t\t<ssk:federalTax>5565</ssk:federalTax>\n\
+    \t\t\t\t</ssk:jobExpensesPartner2>\n\t\t\t\t<ssk:insuranceAndInterest>\n\t\t\t\
+    \t\t<ssk:cantonalTax>8000</ssk:cantonalTax>\n\t\t\t\t\t<ssk:federalTax>6650</ssk:federalTax>\n\
+    \t\t\t\t</ssk:insuranceAndInterest>\n\t\t\t\t<ssk:employmentBothPartner>\n\t\t\
+    \t\t\t<ssk:cantonalTax>5900</ssk:cantonalTax>\n\t\t\t\t\t<ssk:federalTax>13400</ssk:federalTax>\n\
+    \t\t\t\t</ssk:employmentBothPartner>\n\t\t\t\t<ssk:totalAmountDeduction>\n\t\t\
+    \t\t\t<ssk:cantonalTax>24565</ssk:cantonalTax>\n\t\t\t\t\t<ssk:federalTax>30715</ssk:federalTax>\n\
+    \t\t\t\t</ssk:totalAmountDeduction>\n\t\t\t</ssk:deduction>\n\t\t\t<ssk:revenueCalculation>\n\
+    \t\t\t\t<ssk:totalAmountRevenue>\n\t\t\t\t\t<ssk:cantonalTax>146900</ssk:cantonalTax>\n\
+    \t\t\t\t\t<ssk:federalTax>146900</ssk:federalTax>\n\t\t\t\t</ssk:totalAmountRevenue>\n\
+    \t\t\t\t<ssk:totalAmountDeduction>\n\t\t\t\t\t<ssk:cantonalTax>24565</ssk:cantonalTax>\n\
+    \t\t\t\t\t<ssk:federalTax>30715</ssk:federalTax>\n\t\t\t\t</ssk:totalAmountDeduction>\n\
+    \t\t\t\t<ssk:netIncome>\n\t\t\t\t\t<ssk:cantonalTax>122335</ssk:cantonalTax>\n\
+    \t\t\t\t\t<ssk:federalTax>116185</ssk:federalTax>\n\t\t\t\t</ssk:netIncome>\n\t\
+    \t\t\t<ssk:adjustedNetIncome>\n\t\t\t\t\t<ssk:cantonalTax>122335</ssk:cantonalTax>\n\
+    \t\t\t\t\t<ssk:federalTax>116185</ssk:federalTax>\n\t\t\t\t</ssk:adjustedNetIncome>\n\
+    \t\t\t\t<ssk:socialDeductionHomeChild>\n\t\t\t\t\t<ssk:cantonalTax>18000</ssk:cantonalTax>\n\
+    \t\t\t\t\t<ssk:federalTax>13000</ssk:federalTax>\n\t\t\t\t</ssk:socialDeductionHomeChild>\n\
+    \t\t\t\t<ssk:socialDeductionPartner>\n\t\t\t\t\t<ssk:federalTax>2600</ssk:federalTax>\n\
+    \t\t\t\t</ssk:socialDeductionPartner>\n\t\t\t\t<ssk:totalAmountFiscalRevenue>\n\
+    \t\t\t\t\t<ssk:cantonalTax>104335</ssk:cantonalTax>\n\t\t\t\t\t<ssk:federalTax>100585</ssk:federalTax>\n\
+    \t\t\t\t</ssk:totalAmountFiscalRevenue>\n\t\t\t\t<ssk:resultingFiscalRevenue>\n\
+    \t\t\t\t\t<ssk:cantonalTax>104335</ssk:cantonalTax>\n\t\t\t\t\t<ssk:federalTax>100585</ssk:federalTax>\n\
+    \t\t\t\t</ssk:resultingFiscalRevenue>\n\t\t\t</ssk:revenueCalculation>\n\t\t\t\
+    <ssk:asset>\n\t\t\t\t<ssk:totalAmountFiscalAssets>\n\t\t\t\t\t<ssk:fiscalValue>0</ssk:fiscalValue>\n\
+    \t\t\t\t</ssk:totalAmountFiscalAssets>\n\t\t\t\t<ssk:resultingFiscalAssets>\n\t\
+    \t\t\t\t<ssk:fiscalValue>0</ssk:fiscalValue>\n\t\t\t\t</ssk:resultingFiscalAssets>\n\
+    \t\t\t</ssk:asset>\n\t\t\t<ssk:attachedForms>\n\t\t\t\t<ssk:attachedPcTaxDeclaration>true</ssk:attachedPcTaxDeclaration>\n\
+    \t\t\t\t<ssk:attachedListOfAssets>true</ssk:attachedListOfAssets>\n\t\t\t\t<ssk:attachedWageStatement>true</ssk:attachedWageStatement>\n\
+    \t\t\t\t<ssk:attachedColumn3a>false</ssk:attachedColumn3a>\n\t\t\t\t<ssk:attachedExpenses>true</ssk:attachedExpenses>\n\
+    \t\t\t\t<ssk:locationAndDate>Zurich, 09.06.2021</ssk:locationAndDate>\n\t\t\t\
+    </ssk:attachedForms>\n\t\t\t<ssk:lastTaxDeclaration>\n\t\t\t\t<ech07:municipalityName>Adlikon</ech07:municipalityName>\n\
+    \t\t\t</ssk:lastTaxDeclaration>\n\t\t</ssk:mainForm>\n\t\t<ssk:listOfSecurities>\n\
+    \t\t\t<ssk:locationAndDate>Zurich, 09.06.2021</ssk:locationAndDate>\n\t\t\t<ssk:attachedPCListOfSecurities>1</ssk:attachedPCListOfSecurities>\n\
+    \t\t\t<ssk:totalGrossRevenue>\n\t\t\t\t<ssk:cantonalTax>0</ssk:cantonalTax>\n\t\
+    \t\t\t<ssk:federalTax>0</ssk:federalTax>\n\t\t\t</ssk:totalGrossRevenue>\n\t\t\
+    \t<ssk:withholdingTax>0</ssk:withholdingTax>\n\t\t</ssk:listOfSecurities>\n\t\t\
+    <ssk:jobExpenses>\n\t\t\t<ssk:jobExpensePartner1>\n\t\t\t\t<ssk:detailsMotorvehicle>\n\
+    \t\t\t\t\t<ssk:cantonExtension>\n\t\t\t\t\t\t<zh:carOrMotorbikeExtension>\n\t\t\
+    \t\t\t\t\t<zh:isCopiedRow>false</zh:isCopiedRow>\n\t\t\t\t\t\t</zh:carOrMotorbikeExtension>\n\
+    \t\t\t\t\t\t<ssk:canton>ZH</ssk:canton>\n\t\t\t\t\t</ssk:cantonExtension>\n\t\t\
+    \t\t\t<ssk:numberOfWorkdays>240</ssk:numberOfWorkdays>\n\t\t\t\t</ssk:detailsMotorvehicle>\n\
+    \t\t\t\t<ssk:detailsMotorvehicle>\n\t\t\t\t\t<ssk:cantonExtension>\n\t\t\t\t\t\
+    \t<zh:carOrMotorbikeExtension>\n\t\t\t\t\t\t\t<zh:isCopiedRow>false</zh:isCopiedRow>\n\
+    \t\t\t\t\t\t</zh:carOrMotorbikeExtension>\n\t\t\t\t\t\t<ssk:canton>ZH</ssk:canton>\n\
+    \t\t\t\t\t</ssk:cantonExtension>\n\t\t\t\t\t<ssk:numberOfWorkdays>240</ssk:numberOfWorkdays>\n\
+    \t\t\t\t</ssk:detailsMotorvehicle>\n\t\t\t\t<ssk:detailsMotorvehicleBusiness>\n\
+    \t\t\t\t\t<ssk:numberOfWorkdays>240</ssk:numberOfWorkdays>\n\t\t\t\t</ssk:detailsMotorvehicleBusiness>\n\
+    \t\t\t\t<ssk:detailsMotorvehicleBusiness>\n\t\t\t\t\t<ssk:numberOfWorkdays>240</ssk:numberOfWorkdays>\n\
+    \t\t\t\t</ssk:detailsMotorvehicleBusiness>\n\t\t\t\t<ssk:cateringSubsidized>\n\
+    \t\t\t\t\t<ssk:cantonalTax>1600</ssk:cantonalTax>\n\t\t\t\t\t<ssk:federalTax>1600</ssk:federalTax>\n\
+    \t\t\t\t</ssk:cateringSubsidized>\n\t\t\t\t<ssk:remainingJobCostFlatrate>\n\t\t\
+    \t\t\t<ssk:cantonalTax>2000</ssk:cantonalTax>\n\t\t\t\t\t<ssk:federalTax>2000</ssk:federalTax>\n\
+    \t\t\t\t</ssk:remainingJobCostFlatrate>\n\t\t\t\t<ssk:furtherEducationFlatrate>\n\
+    \t\t\t\t\t<ssk:cantonalTax>500</ssk:cantonalTax>\n\t\t\t\t\t<ssk:federalTax>500</ssk:federalTax>\n\
+    \t\t\t\t</ssk:furtherEducationFlatrate>\n\t\t\t\t<ssk:sidelineFlatrate>\n\t\t\t\
+    \t\t<ssk:cantonalTax>1000</ssk:cantonalTax>\n\t\t\t\t\t<ssk:federalTax>1000</ssk:federalTax>\n\
+    \t\t\t\t</ssk:sidelineFlatrate>\n\t\t\t\t<ssk:totalAmountJobExpenses>\n\t\t\t\t\
+    \t<ssk:cantonalTax>5100</ssk:cantonalTax>\n\t\t\t\t\t<ssk:federalTax>5100</ssk:federalTax>\n\
+    \t\t\t\t</ssk:totalAmountJobExpenses>\n\t\t\t\t<ssk:placeOfWorkAddress>Paradeplatz</ssk:placeOfWorkAddress>\n\
+    \t\t\t</ssk:jobExpensePartner1>\n\t\t\t<ssk:jobExpensePartner2>\n\t\t\t\t<ssk:detailsMotorvehicle>\n\
+    \t\t\t\t\t<ssk:cantonExtension>\n\t\t\t\t\t\t<zh:carOrMotorbikeExtension>\n\t\t\
+    \t\t\t\t\t<zh:isCopiedRow>false</zh:isCopiedRow>\n\t\t\t\t\t\t</zh:carOrMotorbikeExtension>\n\
+    \t\t\t\t\t\t<ssk:canton>ZH</ssk:canton>\n\t\t\t\t\t</ssk:cantonExtension>\n\t\t\
+    \t\t\t<ssk:numberOfWorkdays>240</ssk:numberOfWorkdays>\n\t\t\t\t</ssk:detailsMotorvehicle>\n\
+    \t\t\t\t<ssk:detailsMotorvehicle>\n\t\t\t\t\t<ssk:cantonExtension>\n\t\t\t\t\t\
+    \t<zh:carOrMotorbikeExtension>\n\t\t\t\t\t\t\t<zh:isCopiedRow>false</zh:isCopiedRow>\n\
+    \t\t\t\t\t\t</zh:carOrMotorbikeExtension>\n\t\t\t\t\t\t<ssk:canton>ZH</ssk:canton>\n\
+    \t\t\t\t\t</ssk:cantonExtension>\n\t\t\t\t\t<ssk:numberOfWorkdays>240</ssk:numberOfWorkdays>\n\
+    \t\t\t\t</ssk:detailsMotorvehicle>\n\t\t\t\t<ssk:detailsMotorvehicleBusiness>\n\
+    \t\t\t\t\t<ssk:numberOfWorkdays>240</ssk:numberOfWorkdays>\n\t\t\t\t</ssk:detailsMotorvehicleBusiness>\n\
+    \t\t\t\t<ssk:detailsMotorvehicleBusiness>\n\t\t\t\t\t<ssk:numberOfWorkdays>240</ssk:numberOfWorkdays>\n\
+    \t\t\t\t</ssk:detailsMotorvehicleBusiness>\n\t\t\t\t<ssk:cateringSubsidized>\n\
+    \t\t\t\t\t<ssk:cantonalTax>1600</ssk:cantonalTax>\n\t\t\t\t\t<ssk:federalTax>1600</ssk:federalTax>\n\
+    \t\t\t\t</ssk:cateringSubsidized>\n\t\t\t\t<ssk:remainingJobCostFlatrate>\n\t\t\
+    \t\t\t<ssk:cantonalTax>2165</ssk:cantonalTax>\n\t\t\t\t\t<ssk:federalTax>2165</ssk:federalTax>\n\
+    \t\t\t\t</ssk:remainingJobCostFlatrate>\n\t\t\t\t<ssk:furtherEducationFlatrate>\n\
+    \t\t\t\t\t<ssk:cantonalTax>500</ssk:cantonalTax>\n\t\t\t\t\t<ssk:federalTax>500</ssk:federalTax>\n\
+    \t\t\t\t</ssk:furtherEducationFlatrate>\n\t\t\t\t<ssk:sidelineFlatrate>\n\t\t\t\
+    \t\t<ssk:cantonalTax>1300</ssk:cantonalTax>\n\t\t\t\t\t<ssk:federalTax>1300</ssk:federalTax>\n\
+    \t\t\t\t</ssk:sidelineFlatrate>\n\t\t\t\t<ssk:totalAmountJobExpenses>\n\t\t\t\t\
+    \t<ssk:cantonalTax>5565</ssk:cantonalTax>\n\t\t\t\t\t<ssk:federalTax>5565</ssk:federalTax>\n\
+    \t\t\t\t</ssk:totalAmountJobExpenses>\n\t\t\t\t<ssk:placeOfWorkAddress>Bahnhofstrasse</ssk:placeOfWorkAddress>\n\
+    \t\t\t</ssk:jobExpensePartner2>\n\t\t</ssk:jobExpenses>\n\t\t<ssk:insurancePremiums>\n\
+    \t\t\t<ssk:deductionInsuranceAndInterestMarried>\n\t\t\t\t<ssk:cantonalTax>7800</ssk:cantonalTax>\n\
+    \t\t\t\t<ssk:federalTax>5250</ssk:federalTax>\n\t\t\t</ssk:deductionInsuranceAndInterestMarried>\n\
+    \t\t\t<ssk:deductionChild>\n\t\t\t\t<ssk:cantonalTax>2600</ssk:cantonalTax>\n\t\
+    \t\t\t<ssk:federalTax>1400</ssk:federalTax>\n\t\t\t</ssk:deductionChild>\n\t\t\
+    \t<ssk:totalDeductionInsuranceAndInterest>\n\t\t\t\t<ssk:cantonalTax>10400</ssk:cantonalTax>\n\
+    \t\t\t\t<ssk:federalTax>6650</ssk:federalTax>\n\t\t\t</ssk:totalDeductionInsuranceAndInterest>\n\
+    \t\t\t<ssk:finalDeduction>\n\t\t\t\t<ssk:cantonalTax>8000</ssk:cantonalTax>\n\t\
+    \t\t\t<ssk:federalTax>6650</ssk:federalTax>\n\t\t\t</ssk:finalDeduction>\n\t\t\
+    \t<ssk:privateHealthInsurance>8000</ssk:privateHealthInsurance>\n\t\t\t<ssk:subtotalAmount>8000</ssk:subtotalAmount>\n\
+    \t\t\t<ssk:paidInsuranceAndInterest>8000</ssk:paidInsuranceAndInterest>\n\t\t\t\
+    <ssk:deductionChildNumber>2</ssk:deductionChildNumber>\n\t\t</ssk:insurancePremiums>\n\
+    \t</ssk:content>\n</ssk:message>"
+  format: PDF_417
+  sources:
+  - 0
+  - 1
+  - 2
+  - 3

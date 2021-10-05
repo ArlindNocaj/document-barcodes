@@ -1,0 +1,3 @@
+include LICENSE
+include data/*
+include data/salary_swissdec/SalarySinglePage.pdf
