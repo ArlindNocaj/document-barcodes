@@ -6,6 +6,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 with open('requirements.txt') as f:
     required = f.read().splitlines()
 
+
 setuptools.setup(
     name="docbarcodes",
     version="1.0.1",
