@@ -1,7 +1,11 @@
 name: Publish Python 🐍 distributions 📦 to PyPI and TestPyPI
 
-on: push
-
+# Only trigger, when the build workflow succeeded
+on:
+  workflow_run:
+    workflows: ["CI build"]
+    types:
+      - completed
 jobs:
   build-n-publish:
     name: Build and publish Python 🐍 distributions 📦 to PyPI and TestPyPI
