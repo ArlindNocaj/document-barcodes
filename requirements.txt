@@ -1,7 +1,7 @@
 pdf2image==1.16
 opencv-python==4.5.3.56
 loguru==0.5.3
-zxing @ git+https://github.com/ArlindNocaj/python-zxing.git@master
+python_zxing==0.13
 pytest==6.2.5
 pytest-regressions==2.2.0
 hypothesis==6.23.1
