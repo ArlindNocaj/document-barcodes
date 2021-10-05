@@ -8,7 +8,6 @@ def named_tuple(self, data):
 
 yaml.SafeDumper.yaml_multi_representers[tuple] = named_tuple
 
-
 def test_drivers_license_newyork(data_regression):
     file = "data/drivers-license new york.jpg"
 
