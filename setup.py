@@ -11,10 +11,10 @@ setuptools.setup(
     version="1.0.1",
     author="Arlind Nocaj",
     author_email="nocajar@gmail.com",
-    description="Docbarcode extracts 1D and 2D barcodes from scanned PDF documents or images.",
+    description="Docbarcodes extracts 1D and 2D barcodes from scanned PDF documents or images.",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/pypa/sampleproject",
+    url="https://github.com/pypa/docbarcodes",
     project_urls={
         "Bug Tracker": "https://github.com/pypa/sampleproject/issues",
     },
