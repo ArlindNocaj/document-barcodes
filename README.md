@@ -26,8 +26,11 @@ The approach works as follows:
 
 # Quick start 
 
-Install package
+Required:
+* Java 8
 
+Install package
+  
 ```
 pip install docbarcodes
 ```
@@ -108,6 +111,15 @@ print(barcodes_raw)
 print(barcodes_combined)
 ```
 
+# FAQ
+
+On Windows only: If you have problems with the installation of package dependencies, I recommend using `conda` to install java and poppler
+
+```shell
+conda install -y -c conda-forge jpype1=1.3.0
+conda install -c conda-forge poppler=21
+```
+
 
 # Show package licenses
 
@@ -115,7 +127,7 @@ print(barcodes_combined)
 pip-licenses --with-urls --with-system --format=markdown
 ```
 
-# Some Improvements:
+# Improvements to be made:
 
-* [ ] implement multithreading in java for jpype zxing usage
+* [ ] implement multithreading class for zxing in java which returns proper objects for python consumption
 * [ ] extension mechanisms for other 2D barcode aggregations
