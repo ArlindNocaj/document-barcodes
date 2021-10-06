@@ -1,4 +1,4 @@
-from docbarcodes.zxing.extract import process_document_old
+from docbarcodes.extract import process_document_old
 import yaml
 
 def named_tuple(self, data):

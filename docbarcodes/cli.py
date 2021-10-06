@@ -4,7 +4,7 @@ from typing import List
 
 from loguru import logger
 import typer
-from docbarcodes.zxing.extract import process_document
+from docbarcodes.extract import process_document
 # from docbarcodes.zxingjpype.zxingreader import buildHints
 import sys
 app = typer.Typer()
