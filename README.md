@@ -19,7 +19,7 @@ Some working documents with barcodes are:
 
 The approach works as follows:
 
-1. Detect barcode regions on the document using opencv and image transformation heuristics, see https://github.com/pyxploiter/Barcode-Detection-and-Decoding
+1. Detect barcode regions on the document using opencv and [image transformation heuristics](https://github.com/pyxploiter/Barcode-Detection-and-Decoding)
 2. Extract the raw barcode data using [zxing](https://github.com/zxing/zxing)
 3. Combine multiple barcodes and decode the data.
 
