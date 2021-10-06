@@ -26,6 +26,11 @@ The approach works as follows:
 
 # Usage 
 
+```
+pip install docbarcodes
+```
+
+
 [ ] Extract zurich tax statements
 
 [ ] Extract swiss salary statement

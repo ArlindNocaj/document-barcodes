@@ -9,7 +9,7 @@ with open('requirements.txt') as f:
 
 setuptools.setup(
     name="docbarcodes",
-    version="1.0.2",
+    version="1.0.5",
     author="Arlind Nocaj",
     author_email="nocajar@gmail.com",
     description="Docbarcodes extracts 1D and 2D barcodes from scanned PDF documents or images.",
@@ -26,9 +26,6 @@ setuptools.setup(
     package_dir={"": "src"},
     packages=setuptools.find_packages(where="src"),
     install_requires=required,
-    dependency_links=[
-          'http://github.com/ArlindNocaj/python-zxing/tarball/master#egg=python_zxing-0.13',
-      ],
     python_requires=">=3.6",
     entry_points={
         'console_scripts': ['docbarcodes=docbarcodes.cli:app'],
