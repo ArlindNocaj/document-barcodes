@@ -1,0 +1,6 @@
+venv/
+.idea/
+.pytest_cache/
+.hypothesis/
+/.aws-sam/
+.idea

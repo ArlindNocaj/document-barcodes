@@ -1,0 +1,174 @@
+- format: PDF_417
+  num_candidate: 2
+  page: 0
+  points:
+  - - 0.05639250814332247
+    - 0.7173725151253241
+  - - 0.6105456026058632
+    - 0.7173725151253241
+  - - 0.6105456026058632
+    - 0.8426966292134831
+  - - 0.05639250814332247
+    - 0.8426966292134831
+  raw: "x\x9Cí\eÛrÛ6ö¹ù\n\x8D\x9FvgW\x12I]íqÔqä¸q7¾lì6;}\x83IÈDC\x01\x1A\0´l\x7Fý\x82\
+    \x04H\x82 @JI\x9Ad¦\x9Eñ\x8Bp®887àÐÇ??®\x93Þ\x03¤\f\x11üúÀ\x1Fx\a=\x88C\x12!|ÿúà·Û³þüàçÅ«cÆ>\x1D\
+    ­!cà\x1EöÖ\b\x13ú{A2:è\t\x16\x98\x1DÁ0öf¯\x0FbÎ7GÃáv»\x1D\x88\x95A\x18\x0Fsð\x10\
+    .ßõ=Ï\x9BõWÃ©N2ï$\x99\v\x12]\x8Aïu\x91ø\x9E!Å÷;I|A2×HÆã.\x92ñX\x90\x8Cu\x92i'ÉÔ\
+    \ 9ì´Øá¬Ú¼8\N\x0Etß?¬Ð\x9Fã\x1Aö³\x86ü\x1C÷9x\x8C`\x98\0\n¸8È>âCÁnÔ÷*Ã=2Tc°\x1D\
+    \r\b½\x1F\x06ÂZÃÿ]¼¿\tc¸\x06}\x84\x19\a8\x84\a\x8BW?å~\x12C\x10A*~É\x9F!À\x9C\
+    à·\x8F\x1CâÌc²õ\x9F\x8E\x9Fc\NV_\x97\0\x14E\x10\x9F\x02\x0EäZ¾È`²z»Þ$äi\r1¿ö\x17\
+    +\x900x<´\x81**LnL §©$³À\x9Câ\x02·¸ M\\Ð\"N'¤0\x81\x0FÂNKB6P\x1E\x88&Ñ\x06\x95\
+    Ö\x1AZÌ\x95ñ\x03\x9B\r%\x0F ù\0C\x886\\\x97DR\x1CÁè\x16<\x82»\x04\x9E\x8BP_C\x05\
+    Ö\x8F\v$\x02cá{ã\x91ç\x1D\x0FÍu\x1D\x7F\x05Å)\x16èÞ¤@×\x96\x95ða»tM¹\x0F\x80\v\
+    j\x0E©È4\"\x0F}'%Û´hZò¿)HÐ\nÁè\x1C?@Æ³\x13f\vÏ²i+¢\x8Bë\tc\x90[ÙHH\x97é,ôV\x8C\
+    Ê\x9B¬\x9E\x93G\x04Ii\bo\x9E\x18\x87k=PäÂ5E\x0F\x82qOh'\x83ÄÄS%f\x11x\x81×÷\a\
+    þ| µ*Ö+Låãø^Éú\x88pD¶¬çK\x02\x13\\\x11FB\x81\x8C¿ß÷Æ}\x7F\x92cçkÕî\x9A\x9BÈ\t\
+    I\x98fçð\x1E1Ý¤ÅòíÓ\x06.<_òÓ×\x9A¨§0AbGO\x17\x90Ç$2\x89\f¨\x8D\x9C\NTX=3È{\x12\
+    c\x90²-Dì\x1Fð\x9F=q*½\x13z\a\x11¿\x87w\x90\x1A|+²j¯Í]í¼×àûí\x15ö.Åþ0¤[Hï>{\x97\
+    Ê«Îþ#ým\x1E\x8E\x0F½>\x88æÁ\\w:\x01.)Â\x04eI\x190¶%4º¦\x84ÃÐHÃN\x94We*¶\x944-_-þx§§©¼B\x0E\
+    \x1D%2'ã\x14`\x06r!§\x95sOûÞá­ï\x1D\x8D³¿ÁxêýË\v"
+  resultMetadata:
+    ERROR_CORRECTION_LEVEL: '4'
+    PDF417_EXTRA_METADATA:
+      addressee: None
+      checksum: -1
+      fileId: BUBSBUBTBSBYBSBbtbsbwbsbwbs
+      fileName: 76;7564945010782;2020
+      fileSize: -1
+      optionalData: '[0, 847, 209, 7, 156, 129, 125, 1, 7, 242, 870, 60, 60, 923,
+        1, 111, 104]'
+      segmentCount: 4
+      segmentIndex: 0
+      sender: None
+      timestamp: -1
+- format: PDF_417
+  num_candidate: 3
+  page: 0
+  points:
+  - - 0.05639250814332247
+    - 0.9011812157879574
+  - - 0.6105456026058632
+    - 0.9011812157879574
+  - - 0.6105456026058632
+    - 1.0265053298761164
+  - - 0.05639250814332247
+    - 1.0265053298761164
+  raw: "\x8E\x8A\x94f\x92\x94¬Àã5¤H\x1CEf\x11\N[®\x15X\x9Büç\x19%ki8O\x88ó%²\x06ªcß\x12\
+    \x15ÔA\x7FTÃ\x15\x80W\x9DûÏ~Ê¨\\(­Ô¯:P?üZ®±£¼R\x86-[\x11©\x05ÁÂÂ¼d½\x06\b\x9F\x11\
+    º®ÎI(ÎrÃ\x81k@¹ðBÕ\x13H \\ºÎqÎEÍå\"\x8F\x87Z9\x96hd%V\x11H.\x81(\x17\x17)ËR-ÀX*T\x03\
+    jD+D\x19\x97\x14Å®ª%\rï\x01/f\x93éøp<\x11Mîl\x1EHÔ\x87º\x02<®´,Ë`ÞÒª\r\x9EGKaÀ{B\x9F\
+    \x16\x17¿\r\x02\x7F°AÑñÐ\x81ag°ð\x83Ñx25©Ê:êPDùG\x97%ó}\x80(¢âÊq\x8EWâ\x8CjfÎ{í£\r\
+    \x11\x8Dgr\"±t5El8iK\fÆ)\x14\x95O\x1E\x90ø!Â\x1Aæ»©`\x06ELR\x06/ÓµH¿\x8B¬¼4W\r\
+    \x02N¶ÂçS\x8AÂ¸ÀÎ\x97LM¶\x88±?ÐfI\"¸\x98{YÀY\0Åþ\x86\x1D\e\x94'bµ\x8E4¾\x8BR\N\
+    \x04E\x82ì\x86\x03\x9E2­/ÊïPuè\"\x90º\x98Ë\x9A(;·\\\x90èiÑ}&{æ«¤Q®è\x11'[e\x95\
+    \x16U*¶@*\x12\x91Ó.R,bl#Ú,þ¤éïÍ\x8EÖ\x1ADxd -Ý\x048\x89òp<\x89\x12ô\x89`\em\x15\
+    ®e\x86mhS¦H[¦±g¡@·IKú\x91±hI@+\nÒ\"Tm)HBª\x8Cs\vÄÑ\x81\x82ÂÈDú\x06\x9CÁûõÏ×a·@«²1J\"\
+    í\"ôÙæ\x92ùz\x0Fs¡µÃV\x05nÖ\x87^­Þ Êc#¡>A@/Da\x8AOÁ\x93(¤þ¤(º\x16°\x1Eá\x16\x9E\
+    ;\x1D\x8Cí:®Z Â|ç8Oj&\x8Eê\x93D¢,ù\x9EB\x0EPR%4\x81°N¹¸á,3^K\x92n\x12X]\x81\x9B\
+     2©µs\x96ð\x0EõÚ\e\x8D\x96VK\x91Æâzw\x957oTÜ ug4 Z\NJÐ\x9Aà§«ªÎéd\x16håÇu_ýºî»o´_\x12\
+    \x98|5ÿ\x9Dåþ\e¼øïßÎ\x7F)|\x808\N\x1A\x7F\x98¿vÁèB4Ú\x1Fth­¡>Y\x93\x14s\x7F1\x1D\
+    \x05\x13¯Ö \x16\x10\x17M°\x98\x05¾\x95&ÐmæT£¦ä\r\x8AD\NÂ°[Ñ\x89çí«çtb%±ªiU¤Ã÷\x95\
+    í­.oÙ¾ôÎòÅSâÝÁ{TÞ3Ë»_\r £C\x1CUÈêò§-×QEC½¡âZ\x9FÒ\"G!Qe"
+  resultMetadata:
+    ERROR_CORRECTION_LEVEL: '4'
+    PDF417_EXTRA_METADATA:
+      addressee: None
+      checksum: -1
+      fileId: BUBSBUBTBSBYBSBbtbsbwbsbwbs
+      fileName: 76;7564945010782;2020
+      fileSize: -1
+      optionalData: '[0, 847, 209, 7, 156, 129, 125, 1, 7, 242, 870, 60, 60, 923,
+        1, 111, 104]'
+      segmentCount: 4
+      segmentIndex: 1
+      sender: None
+      timestamp: -1
+- format: PDF_417
+  num_candidate: 4
+  page: 0
+  points:
+  - - 0.05639250814332247
+    - 1.0849899164505905
+  - - 0.6105456026058632
+    - 1.0849899164505905
+  - - 0.6105456026058632
+    - 1.2103140305387496
+  - - 0.05639250814332247
+    - 1.2103140305387496
+  raw: "\x15\x81\x06Ô©\n\x7FR~¡­èa·ÃîÚ\x8D\x10|g#ô\x82ÝÌ \\}o3\x0463\x18>ö\x8Dý!Ò®ê·\x90\
+    qi\x87\x13ù c>ó\x18f\x90Á×a\N\x8Eíu[â[9\NÝ\x12ov²\x84Ì)\x9Fe\x89\x9AOXÆ\v\x99\x17\
+    Õf,n\x9C\x1D\x18\x05;0êÒ¨ØG\x97V\x1AÞ\x8E\f;´Óð´bîÈ·_ZÃ\x19\fSqeF\x90Yª\x90>ÜpÎ;Ìq\x87\
+    cÒ¡\x1EÎìâäE\x9AdÏ\ay\x95êÐÅ\x1FO\x0FÝ\x03\x98ÆüEÃ¶kå\x90\\Ü\"µ\x95l!\x82Q\x1A\
+    \x1A=â\x9FäîíãFX\x17²ú;^Sù\x89¿»ê\x15®]q§X\x87R\x81S©Ét²³R%î®Jé¯\t\b³\x94fÓÛ\x13\
+    \x1C\x9DcQ\x92`5\x160åÏ½ÝM5\x9DNZMå\x96«õdÙ\vÀ\eÂc¥·ÓZûxßhÜ~\x86-\x92Í°8­{^S±`¼Ç9\x8E\
+    ¼\x99ßz\x90NÉ\x12\\\x8F\x03½!_\x82$L\x13ó\x1EõÃÅ÷\x0Fk_É\nC^\x1F\x017Ì\x14\x04\
+    £ÑÎêøþÔ\x9F·êc\bTOâ\x7Ff\x8Dctù­\x95q\bV\x13\x9Aì\x81¡´Ù;\x01ÍïÈNÝöI$þÈk÷¦vé6\x05\
+    -éDc\x1DL÷\x92×\x9A!Î\x10\v³Qz{xyã}\x8EÊó&íGÕ._%\x06\x96&Ù\fý»(Ø\"½VãÍ¼%#@û^ÁºÛü\x83\
+    \x06VS._ÿ\x1D$i9cÔ\x97ÚL§3³YîK\x84¹Y©\x90+w*7Î9\bc\x18e\x03K]£bý:\x14f>­>èRÏV­(M.Ù\x18\
+    ýj¥tir¨\x81\x9BÔ\x1FÁ=Ì\x86=0«\x9F\x16ò:¼I¿$IºÆ#P{\N2aM²¢¿±H,A\x15UBä\vÝ\x89º\x8E\
+    É\x01Ý¿{ÞáÀ\x9B\x0E²\x11»daâi'Ó8\nÉ\x180n5ð\x17Ì\x91\x94*VÎÅ\x8C­\x1AbK5ò3º)[{MÁ/ÙyÍ\x91\
+    \x96ïM!¾ájM\x8C\x92K\x1Ee¿PÂ,·\x8E]î8»]q´\x88nÈÊ9l\x11\x8Fc\x92d_ºj\\\x8CÕÒÌ6«\x9A\
+    m}Å»Z´\\\x04¢ü\x0EÎ.\b'ô\x01Æ(L,©×þx\rè\x15ÍéîÐ§æc_\x8E\x83Ø\x92l\x10\x8C>\x90\
+    ­v±ÕWõg\x82\x0E\x8E]÷Ù¶\v­j\x9BòÉøÕê#¡\x9F\"ðÄDÓ¦,Ý\x80h¹Ñi¢\x17\x03þE\x06|\x93\
+    2\x84«ï(¾®è:ó\x1FE\x05\x91ä Í>$L"
+  resultMetadata:
+    ERROR_CORRECTION_LEVEL: '4'
+    PDF417_EXTRA_METADATA:
+      addressee: None
+      checksum: -1
+      fileId: BUBSBUBTBSBYBSBbtbsbwbsbwbs
+      fileName: 76;7564945010782;2020
+      fileSize: -1
+      optionalData: '[0, 847, 209, 7, 156, 129, 125, 1, 7, 242, 870, 60, 60, 923,
+        1, 111, 104]'
+      segmentCount: 4
+      segmentIndex: 2
+      sender: None
+      timestamp: -1
+- format: PDF_417
+  num_candidate: 1
+  page: 1
+  points:
+  - - 0.05639250814332247
+    - 0.20512820512820512
+  - - 0.6105456026058632
+    - 0.20512820512820512
+  - - 0.6105456026058632
+    - 0.2693748199366177
+  - - 0.05639250814332247
+    - 0.2693748199366177
+  raw: "ï\x18\x8AÐ3tw¬Ó=\x1AÖ\x8EþÑ%Uµ\x17Y:\x17Ð_ÉÝ\x920~&Ú\x1FZ½\x196o@{tÒAG#Ý.[rKi6\f\
+    z+zß¼@t©7Ùãm¥]¹vÉ²ËW\x0Fu]JùûÜ>º.\x1FV\x99fcú«Q\"þâg¨6Ér6\x95\x80\x10ÊÈ)¾\x0F\x12\
+    e\nDP\0ø³\x1AS5qªªê(oöÒ\x17´GýKæ~)}/¥ï¥ôí]úüÝßþ*Ü¿yékùG\x19ÛÃÛ·)}_qØñ9¥ï\r\x88\
+    qLVå'ÀûW¿ º&\x1A·Áú\x8CåZø\x19Jõ'\x83òÑþÜ2\x0F¹\0\x94¢Z\x8Cè\x06\x9AÍ\x9DgÙ°Zà\x18\
+    Æ\x18\x93\x83.%ê*\x9B¯¬µàtg\x8Dæ¼Àág\x86r\x95¸ÊÇNÛ4w¨æ{ã\x9DusN±4oëÖA½\vb\r×¡[ËÃø\x9E\
+    ªYÄIÿ\x97ÿ;ñ\x0E\x82\x84Ç¥Æ\x9A`\aBÉ\x80¥wZ\x90i\x84\x06 \x92\bPd5\x8D&Ó\Nâp:õµ}`ó\x90\
+    êK|cÐ¨\x05\x9F2qñß ê\x1DMþwóâÿ#\aÊò"
+  resultMetadata:
+    ERROR_CORRECTION_LEVEL: '4'
+    PDF417_EXTRA_METADATA:
+      addressee: None
+      checksum: -1
+      fileId: BUBSBUBTBSBYBSBbtbsbwbsbwbs
+      fileName: 76;7564945010782;2020
+      fileSize: -1
+      optionalData: '[0, 847, 209, 7, 156, 129, 125, 1, 7, 242, 870, 60, 60, 923,
+        1, 111, 104]'
+      segmentCount: 4
+      segmentIndex: 3
+      sender: None
+      timestamp: -1
+- format: CODE_128
+  num_candidate: 3
+  page: 1
+  points:
+  - - 0.04336319218241042
+    - 1.2794583693460098
+  - - 0.1675488599348534
+    - 1.2794583693460098
+  - - 0.1675488599348534
+    - 1.3215211754537597
+  - - 0.04336319218241042
+    - 1.3215211754537597
+  raw: 0906202602761
+  resultMetadata: {}

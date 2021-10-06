@@ -1,0 +1,29 @@
+- format: PDF_417
+  num_candidate: 4
+  page: 0
+  points:
+  - - 0.14285714285714285
+    - 0.5450070323488045
+  - - 0.14397321428571427
+    - 0.3860759493670886
+  - - 1.4631696428571428
+    - 0.38677918424753865
+  - - 1.4620535714285714
+    - 0.5464135021097046
+  raw: "@\x1C\n\n\nANSI 6360260101DL00280217 DAQ123 654 789\n DAAWILLIAM F SMITH\n\
+    \ DABSMITH\n DACWILLIAM F\n DAG224 MARTHA AVE\n DAIATHENS\n DAJNY\n DAK14215\n\
+    \ DBB19690501\n DBA20220501\n DAU5-08\n DAW195\n DAZBRN\n DAYBRN\n DBC1\n DBHN\n\
+    \ DARM\n DBD20140106\n DATO\n DBE2014-01-06-12.51.46.682000\n DBIN\n ZAAXPFF"
+  resultMetadata:
+    ERROR_CORRECTION_LEVEL: '4'
+    PDF417_EXTRA_METADATA:
+      addressee: None
+      checksum: -1
+      fileId: None
+      fileName: None
+      fileSize: -1
+      optionalData: None
+      segmentCount: -1
+      segmentIndex: 0
+      sender: None
+      timestamp: -1
