@@ -24,16 +24,89 @@ The approach works as follows:
 3. Combine multiple barcodes and decode the data.
 
 
-# Usage 
+# Quick start 
+
+Install package
 
 ```
 pip install docbarcodes
 ```
 
+Download example pdf document
+```
+wget https://github.com/ArlindNocaj/document-barcodes/raw/master/data/salary_swissdec/SalarySinglePage.pdf 
+```
 
-[ ] Extract zurich tax statements
+## CLI usage
+Extract barcodes from salary statement document and format result json using `jq`.
 
-[ ] Extract swiss salary statement
+```shell
+docbarcodes ./SalarySinglePage.pdf | jq .
+```
+```yaml
+{
+  "BarcodesRaw": [
+    {
+      "page": 0,
+      "num_candidate": 2,
+      "raw": "´cý¸z\u0000\u0002V\u0001\u0003\u0000\u0001\u0000\u0001PK\u0003\u0004\u0014\u0000\b\b\b\u0000év\u0003Q\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0004\u0000\u0000\u0000txabMÝnâ0\u0010_Åò}b;¡!¬\u001cWá¯EbYÔÐjÕ;\u0013Ü\u00105±+Û,ð>û&ûb;\tÐö\"Îñ\u0019Ïçùý©mÐ\u001fe]mtYH1Rº4»ZW\u0019~ÞÌ\u0014ß\u000b¾A¦]÷Þ\u007fü äx<îX;·SeXî+÷ªÄíHD#J£B6Ò§ªôpúæ1*\u0016Ó\fS\nm³{é$ÃOLû!õ\u0019=/¦Áx^dxò8\u000bX\u0014×\u000f£5 vkyh$Z)ç\u001be1z|\n&ÁJ¶\nj~ý\\/g¿Ñ¬QïÞ\u001a]¿£ü\u0001£×Å:ÃqÒµ,3o½ª®PáÕAYPJ\u0003·Jù\fÏêJÙ£ªP\u0002=ó[s±D\u0003(®ý9Ãý\u0001²×{£¡#c\u0014Å)\u001aÐa\"ør1EKé¼î©rµ1×öÓÐZÞ¨èê\u000b`ùï¯®*éó\u0016V¢ï$É\b\n¦MOs£\u001a+«Ñ\bvæ ½í\u0002\u0017/A^\u0004++º\u0019\u000eîa(\u000b£Ï\u0010'7bÁsÁ§¦\u0004Å8¹î:µÙ\tþfM+\"ÊÑB¼78ôª«ÏrrqúSûÂ\u0005<¥VAÊX\u001a\u000e!ájð\u0007k»n\u0014Æ\u0010R~wùJù«¼KâAÜ'|y\u0000/ÙÿPK\u0007\bK¦nJÎ\u0001\u0000\u0000Á\u0002\u0000\u0000PK\u0001\u0002\u0014\u0000\u0014\u0000\b\b\b\u0000év\u0003QK¦nJÎ\u0001\u0000\u0000Á\u0002\u0000\u0000\u0004\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000txabPK\u0005\u0006\u0000\u0000\u0000\u0000\u0001\u0000\u0001\u00002\u0000\u0000\u0000\u0000\u0002\u0000\u0000\u0000\u0000",
+      "format": "PDF_417",
+      "points": [
+        [
+          0.08509771986970684,
+          0.2564102564102564
+        ],
+        [
+          0.32166123778501626,
+          0.2564102564102564
+        ],
+        [
+          0.32166123778501626,
+          0.35522904062229904
+        ],
+        [
+          0.08509771986970684,
+          0.35522904062229904
+        ]
+      ],
+      "resultMetadata": {
+        "ERROR_CORRECTION_LEVEL": "2",
+        "PDF417_EXTRA_METADATA": {
+          "addressee": "None",
+          "checksum": -1,
+          "fileId": "None",
+          "fileName": "None",
+          "fileSize": -1,
+          "optionalData": "None",
+          "segmentCount": -1,
+          "segmentIndex": 0,
+          "sender": "None",
+          "timestamp": -1
+        }
+      }
+    }
+  ],
+  "BarcodesCombined": [
+    {
+      "content": "<?xml version=\"1.0\" encoding=\"UTF-8\"?><T xmlns=\"http://www.swissdec.ch/schema/sd/20200220/SalaryDeclarationTxAB\" SID=\"000\" SysV=\"001\"><Company UID-BFS=\"CHE-123.123.123\" Person=\"Paula Nestler\" HR-RC-Name=\"COMPLEX Elektronik AG\" ZIP=\"3600\" CL=\"Abteilung Steuerungen\" Street=\"Eigerweg 6\" Postbox=\"124\" City=\"Thun\" Phone=\"033 238 49 71\"/><PersonID Lastname=\"Aebi\" Firstname=\"Anna\" ZIP=\"3000\" CL=\"\" Street=\"LÃ¤nggassstrasse 26\" Postbox=\"690\" Locality=\"\" City=\"Bern 9\" Country=\"\"><SV-AS-Nr>123.4567.8901.28</SV-AS-Nr></PersonID><A><DocID>1</DocID><Period><from>2016-10-01</from><until>2016-11-30</until></Period><Income>48118.70</Income><GrossIncome>68000.00</GrossIncome><NetIncome>56343.00</NetIncome></A></T>",
+      "format": "PDF_417",
+      "sources": [
+        0
+      ]
+    }
+  ]
+}
+```
+## Code Usage
+
+```python
+from docbarcodes.extract import process_document
+
+barcodes_raw, barcodes_combined = process_document("./SalarySinglePage.pdf")
+
+print(barcodes_raw)
+print(barcodes_combined)
+```
 
 
 # Show package licenses
@@ -42,27 +115,7 @@ pip install docbarcodes
 pip-licenses --with-urls --with-system --format=markdown
 ```
 
-# Limitations
+# Some Improvements:
 
-
-# TODO:
-
-* [x] implement convert pdf to images
-* [x] implement detect 2D barcode
-* [x] implement extract 2D barcodes raw text (Java)
-* [x] implement combine raw 2D barcodes
+* [ ] implement multithreading in java for jpype zxing usage
 * [ ] extension mechanisms for other 2D barcode aggregations
-* [x] finalize output format, needs to be nice for long term solution to provide pdf417 metadata
-* [x] replace py-zxing (cmd hack and parse) with Jpype -> zxing calling (1 object class, and one caller to zxing)
-* [x] finish multiresolution barcode extraction
-* [ ] write test for barcode detection
-* [x] write test for ZH extraction 
-* [x] clean up temp files and images to avoid out of space issues
-* [x] refactor and document project: needs to be written in a nicer way so that its easy understandable
-* [x] add swiss invoice QR document sample and test
-* [x] implement jpype tests for connector
-* [x] command line interface for library
-* [x] fix jpype problem for singleSalarystatement (only partial data got extracted)
-* [x] list licenses of used projects
-* [ ] add code usage examples for ZH statements to Readme
-* [ ] add code usage examples for Salary statements to Readme
