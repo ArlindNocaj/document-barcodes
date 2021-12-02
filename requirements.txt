@@ -4,7 +4,7 @@ loguru==0.5.3
 zxingmod==0.19
 pytest==6.2.5
 pytest-regressions==2.2.0
-hypothesis==6.23.2
+hypothesis==6.29.1
 pydantic==1.8.2
 jpype1==1.3.0
 typer==0.4.0
