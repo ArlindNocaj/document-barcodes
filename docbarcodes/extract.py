@@ -120,7 +120,7 @@ def _get_images(file_name, max_pages):
         images = convert_pdf_to_images(file_name, last_page=max_pages)
         return images
 
-    image = cv2.imread(file_name)
+    image = cv2.imread(str(file_name))
     return [image]
 
 
@@ -157,18 +157,21 @@ if __name__ == '__main__':
     import timeit
 
     start = timeit.default_timer()
-    codes_raw, codes_combined = process_document("data/ZH Tax Sample - Formular 1.ptax20.pdf", None)
-    # barcodes_raw, barcodes_combined = process_document_old("data/ZH Tax Sample - Formular 1.ptax20.pdf", None)
+    #codes_raw, codes_combined = process_document("data/ZH Tax Sample - Formular 1.ptax20.pdf", None)
+    barcodes_raw, barcodes_combined = process_document("data/ZH Tax Sample - Formular 1.ptax20.pdf", None)
     # log_barcodes(barcodes_raw)
     # log_barcodes(barcodes_combined)
 
     # process_document("data/Covid Zertifikat Arlind Nocaj.salary_swissdec")
     # process_document("data/2021_LA_756.1234.5678.97_Musterfrau_Tamara_01_12.salary_swissdec")
     # process_document("data/2021_LA_756.1234.5678.97_Musterfrau_Tamara_01_12-B.salary_swissdec")
-    # barcodes_raw, barcodes_combined = process_document("data/salary_swissdec/COMPLEXCompanyMixedSalaries.pdf",1)
+    #barcodes_raw, barcodes_combined = process_document("data/salary_swissdec/COMPLEXCompanyMixedSalaries.pdf",1)
     # barcodes_raw, barcodes_combined = process_document("data/drivers-license-Sample.FL.DL.PDF", 2)
+    #barcodes_raw, barcodes_combined = process_document("/Users/arlnocaj/projects/document-barcodes/CNI-verso.jpeg", 2)
+    #barcodes_raw, barcodes_combined = process_document("test.png")
 
-    log_barcodes(codes_raw)
-    log_barcodes(codes_combined)
+
+    log_barcodes(barcodes_raw)
+    log_barcodes(barcodes_combined)
     stop = timeit.default_timer()
     print('Time: ', stop - start)
