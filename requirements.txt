@@ -1,6 +1,6 @@
 pdf2image==1.16
 opencv-python==4.6.0.66
-loguru==0.5.3
+loguru==0.6.0
 zxingmod==0.19
 pytest==6.2.5
 pytest-regressions==2.4.1
