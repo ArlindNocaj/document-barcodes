@@ -1,5 +1,5 @@
 pdf2image==1.16
-opencv-python==4.6.0.66
+opencv-python==4.8.1.78
 loguru==0.6.0
 zxingmod==0.19
 pytest==6.2.5
