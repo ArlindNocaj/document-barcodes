@@ -3,7 +3,7 @@ opencv-python==4.6.0.66
 loguru==0.6.0
 zxingmod==0.19
 pytest==6.2.5
-pytest-regressions==2.4.1
+pytest-regressions==2.5.0
 hypothesis>=6.31.6
 pydantic==1.10.7
 jpype1==1.4.1
