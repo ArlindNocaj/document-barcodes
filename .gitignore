@@ -4,3 +4,9 @@ venv/
 .hypothesis/
 /.aws-sam/
 .idea
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+docbarcodes.egg-info/
+*.egg-info/

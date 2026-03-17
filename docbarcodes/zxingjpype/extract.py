@@ -48,7 +48,6 @@ def resize_images(image, scale_range=range(20, 300, 50)):
     yield image, 100
     scale_to_3k = 3000 / image.shape[1] * 100
     r = [scale_to_3k] + list(scale_range)
-    r = [scale_to_3k]
 
     for scale_percent in r:
         width = int(image.shape[1] * scale_percent / 100)
