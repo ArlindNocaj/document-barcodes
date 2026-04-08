@@ -127,8 +127,10 @@ def crop_minAreaRect(img, rect):
 
     center, size = tuple(map(int, center)), tuple(map(int, size))
 
-    w = 30
-    h = 20
+    # Use proportional padding (10% of each dimension) with a minimum floor
+    # to ensure enough quiet zone for barcode decoders like zxing.
+    w = max(30, int(size[0] * 0.10))
+    h = max(20, int(size[1] * 0.10))
     size = (size[0] + w, size[1] + h)
     # get row and col num in img
     height, width = img.shape[0], img.shape[1]
