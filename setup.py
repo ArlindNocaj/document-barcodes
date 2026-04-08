@@ -15,7 +15,7 @@ setuptools.setup(
     description="Docbarcodes extracts 1D and 2D barcodes from scanned PDF documents or images.",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/pypa/docbarcodes",
+    url="https://github.com/ArlindNocaj/document-barcodes",
     project_urls={
         "Bug Tracker": "https://github.com/ArlindNocaj/document-barcodes/issues",
     },
@@ -27,7 +27,7 @@ setuptools.setup(
     package_dir={"docbarcodes": "docbarcodes"},
     packages=setuptools.find_packages(),
     install_requires=required,
-    python_requires=">=3.6",
+    python_requires=">=3.8",
     entry_points={
         'console_scripts': ['docbarcodes=docbarcodes.cli:app'],
     },

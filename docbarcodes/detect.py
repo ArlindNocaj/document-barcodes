@@ -73,7 +73,7 @@ def detect_regions(pil_image, show=False, top_k=5):
     for idx, c in enumerate(c_topk):
         # compute the rotated bounding box of the largest contour
         rect = cv2.minAreaRect(c)
-        box = np.int0(cv2.boxPoints(rect))
+        box = np.intp(cv2.boxPoints(rect))
 
         image_crop, image_rot = crop_minAreaRect(image, rect)
         image_crop_thresh, _ = crop_minAreaRect(thresh, rect)
@@ -92,7 +92,7 @@ def detect_regions(pil_image, show=False, top_k=5):
 
     for idx, region in enumerate(crops_sorted):
         rect = region.rect
-        box = np.int0(cv2.boxPoints(region.rect))
+        box = np.intp(cv2.boxPoints(region.rect))
         if show:
             cv2.imshow("cropped_" + str(idx), region.image)
         # draw a bounding box arounded the detected barcode and display the

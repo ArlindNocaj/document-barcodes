@@ -17,7 +17,8 @@ DocBarcode = namedtuple('DocBarcode', ['page', 'num_candidate', 'raw', 'format',
 def extract_barcode_jpype(file_name, page_regions, try_harder=True, possible_formats=None):
     doc_barcodes = []
 
-    possible_formats = ["PDF_417", "CODE_128", "QR_CODE", "AZTEC"]
+    if possible_formats is None:
+        possible_formats = ["PDF_417", "CODE_128", "QR_CODE", "AZTEC"]
     # possible_formats = None
     for page, regions in enumerate(page_regions):
         for num, region in enumerate(regions):
