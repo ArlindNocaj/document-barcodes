@@ -9,7 +9,7 @@ with open('requirements.txt') as f:
 
 setuptools.setup(
     name="docbarcodes",
-    version="1.0.9",
+    version="1.1.0",
     author="Arlind Nocaj",
     author_email="nocaja.r@gmail.com",
     description="Docbarcodes extracts 1D and 2D barcodes from scanned PDF documents or images.",
