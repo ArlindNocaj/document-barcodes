@@ -1,8 +1,5 @@
-import tempfile
 from loguru import logger
-from pdf2image import convert_from_path
-from pathlib import Path
-import os
+import pypdfium2 as pdfium
 
 
 def convert_pdf_to_images(file_path, last_page=None):
@@ -12,19 +9,24 @@ def convert_pdf_to_images(file_path, last_page=None):
     :param last_page:
     :return:
     """
-    p = Path(file_path)
+    logger.info(f"converting pdf to images: {file_path}")
+    pdf = pdfium.PdfDocument(file_path)
+    try:
+        n_pages = len(pdf)
+        if last_page is not None:
+            n_pages = min(n_pages, last_page)
 
-    with tempfile.TemporaryDirectory() as outpath:
-        logger.debug('created temporary directory', outpath)
-        os.makedirs(outpath, exist_ok=True)
-        logger.info(f"converting pdf to images: {file_path} to {outpath}")
-        images_from_path = convert_from_path(file_path, dpi=600, output_folder=outpath,
-                                             output_file=str(p.stem), fmt="jpeg", last_page=last_page)
-        logger.info(f"num pages: {len(images_from_path)}")
-        # Copy images into memory so file handles are released before
-        # the temporary directory is cleaned up (required on Windows).
-        images_in_memory = []
-        for img in images_from_path:
-            images_in_memory.append(img.copy())
-            img.close()
-        return images_in_memory
+        images = []
+        for i in range(n_pages):
+            page = pdf[i]
+            try:
+                bitmap = page.render(scale=600 / 72)
+                pil_image = bitmap.to_pil()
+                images.append(pil_image)
+            finally:
+                page.close()
+    finally:
+        pdf.close()
+
+    logger.info(f"num pages: {len(images)}")
+    return images

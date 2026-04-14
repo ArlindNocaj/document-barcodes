@@ -25,29 +25,6 @@ jobs:
         python-version: ${{ matrix.python-version }}
         activate-environment: true
 
-    - name: Install poppler (Ubuntu)
-      if: runner.os == 'Linux'
-      run: |
-        sudo apt-get update
-        sudo apt-get install -y poppler-utils
-
-    - name: Install poppler (macOS)
-      if: runner.os == 'macOS'
-      run: |
-        brew install poppler
-
-    - name: Install poppler (Windows)
-      if: runner.os == 'Windows'
-      shell: pwsh
-      run: |
-        $popplerUrl = "https://github.com/oschwartz10612/poppler-windows/releases/download/v24.08.0-0/Release-24.08.0-0.zip"
-        $zipPath = "$env:RUNNER_TEMP\poppler.zip"
-        $extractPath = "$env:RUNNER_TEMP\poppler"
-        Invoke-WebRequest -Uri $popplerUrl -OutFile $zipPath
-        Expand-Archive -Path $zipPath -DestinationPath $extractPath
-        $popplerBin = (Get-ChildItem -Path $extractPath -Recurse -Directory -Filter "bin" | Select-Object -First 1).FullName
-        echo "$popplerBin" | Out-File -FilePath $env:GITHUB_PATH -Encoding utf8 -Append
-
     - name: Install dependencies
       run: |
         uv pip install -e ./

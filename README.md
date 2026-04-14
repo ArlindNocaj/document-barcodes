@@ -113,12 +113,7 @@ print(barcodes_combined)
 
 # FAQ
 
-On Windows only: If you have problems with the installation of package dependencies, I recommend using `conda` to install java and poppler
-
-```shell
-conda install -y -c conda-forge jpype1=1.3.0
-conda install -c conda-forge poppler=21
-```
+PDF rendering is handled by `pypdfium2`, which bundles its own PDFium binary — no external poppler installation is required.
 
 
 # Show package licenses
