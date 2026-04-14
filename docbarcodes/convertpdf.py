@@ -21,4 +21,10 @@ def convert_pdf_to_images(file_path, last_page=None):
         images_from_path = convert_from_path(file_path, dpi=600, output_folder=outpath,
                                              output_file=str(p.stem), fmt="jpeg", last_page=last_page)
         logger.info(f"num pages: {len(images_from_path)}")
-        return images_from_path
+        # Copy images into memory so file handles are released before
+        # the temporary directory is cleaned up (required on Windows).
+        images_in_memory = []
+        for img in images_from_path:
+            images_in_memory.append(img.copy())
+            img.close()
+        return images_in_memory
