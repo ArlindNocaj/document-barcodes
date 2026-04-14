@@ -1,12 +1,67 @@
 import os
+import re
 from collections import namedtuple
 from pathlib import Path
 
 import cv2
 import zxing
+from zxing import CLROutputBlock
 
 RegionBarcode = namedtuple('RegionBarcode', 'page num barcode file region')
 DocBarcode = namedtuple('DocBarcode', ['page', 'num_candidate', 'raw', 'format', 'points', 'resultMetadata'])
+
+
+# Monkey-patch zxing.BarCode.parse to handle non-UTF-8 barcode payloads.
+# The zxing CLI wrapper redirects Java's stderr into stdout (stderr=STDOUT)
+# and calls bytes.decode() on raw barcode data.  On Windows the JVM writes
+# stdout in the system code-page (e.g. cp1252), which causes
+# UnicodeDecodeError for non-ASCII barcode payloads.
+# We try UTF-8 first (correct on Linux/macOS) and fall back to latin-1
+# (losslessly decodes any byte 0x00-0xFF) for Windows / non-UTF-8 output.
+def _decode_safe(data):
+    try:
+        return data.decode('utf-8')
+    except UnicodeDecodeError:
+        return data.decode('latin-1')
+
+
+@classmethod
+def _safe_parse(cls, zxing_output):
+    block = CLROutputBlock.UNKNOWN
+    uri = format = type = None
+    raw = parsed = b''
+    points = []
+
+    for l in zxing_output.splitlines(True):
+        if block == CLROutputBlock.UNKNOWN:
+            if l.endswith(b': No barcode found\n'):
+                return None
+            m = re.match(rb"(\S+) \(format:\s*([^,]+),\s*type:\s*([^)]+)\)", l)
+            if m:
+                uri, format, type = m.group(1).decode(), m.group(2).decode(), m.group(3).decode()
+            elif l.startswith(b"Raw result:"):
+                block = CLROutputBlock.RAW
+        elif block == CLROutputBlock.RAW:
+            if l.startswith(b"Parsed result:"):
+                block = CLROutputBlock.PARSED
+            else:
+                raw += l
+        elif block == CLROutputBlock.PARSED:
+            if re.match(rb"Found\s+\d+\s+result\s+points?", l):
+                block = CLROutputBlock.POINTS
+            else:
+                parsed += l
+        elif block == CLROutputBlock.POINTS:
+            m = re.match(rb"\s*Point\s*\d+:\s*\(([\d.]+),([\d.]+)\)", l)
+            if m:
+                points.append((float(m.group(1)), float(m.group(2))))
+
+    raw = _decode_safe(raw[:-1])
+    parsed = _decode_safe(parsed[:-1])
+    return cls(uri, format, type, raw, parsed, points)
+
+
+zxing.BarCode.parse = _safe_parse
 
 
 def extract_barcode(file_name, page_regions, tmp_dir="/tmp"):
@@ -27,6 +82,7 @@ def extract_barcode(file_name, page_regions, tmp_dir="/tmp"):
                 d_barcode = RegionBarcode(page, num, None, Path(barcode_file).name, region)
                 files.append(barcode_file)
                 doc_barcodes.append(d_barcode)
+
     reader = zxing.BarCodeReader()
     possible_formats = ["PDF_417", "CODE_128", "QR_CODE", "AZTEC"]
     if len(files) == 0:
