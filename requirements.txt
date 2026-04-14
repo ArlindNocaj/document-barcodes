@@ -1,4 +1,5 @@
 pypdfium2>=4.0.0
+Pillow>=9.0.0
 opencv-python>=4.10.0.84
 loguru>=0.6.0
 zxingmod>=0.19
