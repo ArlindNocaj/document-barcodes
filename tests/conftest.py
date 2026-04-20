@@ -20,6 +20,7 @@ def round_floats(obj, precision=4):
 
 
 def remove_points(obj):
+    """Recursively remove `points` keys from nested regression payloads."""
     if isinstance(obj, dict):
         return {k: remove_points(v) for k, v in obj.items() if k != "points"}
     elif hasattr(obj, '_asdict'):

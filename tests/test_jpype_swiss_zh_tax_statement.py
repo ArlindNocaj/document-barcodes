@@ -15,4 +15,4 @@ def test_swiss_zh_tax_statement(data_regression):
 
     barcodes_raw, barcodes_combined = process_document(file,2)
     data_regression.check(round_floats(barcodes_raw), fullpath=file+".barcodes_raw_jpype.yml")
-    data_regression.check(round_floats(barcodes_combined), fullpath=file + ".barcodes_combined_jype.yml")
+    data_regression.check(round_floats(barcodes_combined), fullpath=file + ".barcodes_combined_jpype.yml")

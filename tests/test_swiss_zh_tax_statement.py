@@ -17,7 +17,7 @@ def test_swiss_zh_tax_statement(data_regression):
     if sys.platform.startswith("win"):
         barcodes_raw, barcodes_combined = process_document(file, 2)
         raw_baseline = file + ".barcodes_raw_jpype.yml"
-        combined_baseline = file + ".barcodes_combined_jype.yml"
+        combined_baseline = file + ".barcodes_combined_jpype.yml"
     else:
         barcodes_raw, barcodes_combined = process_document_old(file, 2)
         raw_baseline = file + ".barcodes_raw.yml"
