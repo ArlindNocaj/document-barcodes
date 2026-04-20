@@ -17,3 +17,14 @@ def round_floats(obj, precision=4):
         rounded = [round_floats(item, precision) for item in obj]
         return type(obj)(rounded) if isinstance(obj, tuple) else rounded
     return obj
+
+
+def remove_points(obj):
+    if isinstance(obj, dict):
+        return {k: remove_points(v) for k, v in obj.items() if k != "points"}
+    elif hasattr(obj, '_asdict'):
+        return remove_points(obj._asdict())
+    elif isinstance(obj, (list, tuple)):
+        cleaned = [remove_points(item) for item in obj]
+        return type(obj)(cleaned) if isinstance(obj, tuple) else cleaned
+    return obj

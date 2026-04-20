@@ -1,4 +1,5 @@
-from docbarcodes.extract import process_document_old
+import sys
+from docbarcodes.extract import process_document, process_document_old
 from conftest import round_floats
 import yaml
 
@@ -13,6 +14,14 @@ yaml.SafeDumper.yaml_multi_representers[tuple] = named_tuple
 def test_swiss_zh_tax_statement(data_regression):
     file = "data/ZH Tax Sample - Formular 1.ptax20.pdf"
 
-    barcodes_raw, barcodes_combined = process_document_old(file,2)
-    data_regression.check(round_floats(barcodes_raw), fullpath=file+".barcodes_raw.yml")
-    data_regression.check(round_floats(barcodes_combined), fullpath=file + ".barcodes_combined.yml")
+    if sys.platform.startswith("win"):
+        barcodes_raw, barcodes_combined = process_document(file, 2)
+        raw_baseline = file + ".barcodes_raw_jpype.yml"
+        combined_baseline = file + ".barcodes_combined_jype.yml"
+    else:
+        barcodes_raw, barcodes_combined = process_document_old(file, 2)
+        raw_baseline = file + ".barcodes_raw.yml"
+        combined_baseline = file + ".barcodes_combined.yml"
+
+    data_regression.check(round_floats(barcodes_raw), fullpath=raw_baseline)
+    data_regression.check(round_floats(barcodes_combined), fullpath=combined_baseline)
