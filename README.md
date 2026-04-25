@@ -126,6 +126,8 @@ If `jpype1` needs to build from source on your platform, install Apache Ant alon
 
 PDF rendering is handled by `pypdfium2`, which bundles its own PDFium binary — no external poppler installation is required.
 
+OpenCV is pulled in via `opencv-python-headless`, so no system OpenGL libraries (`libGL.so.1`) are required on headless servers or containers.
+
 
 # Show package licenses
 
