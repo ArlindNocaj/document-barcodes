@@ -1,4 +1,4 @@
-[![Build and Test](https://github.com/ArlindNocaj/document-barcodes/actions/workflows/python-package-conda.yml/badge.svg)](https://github.com/ArlindNocaj/document-barcodes/actions/workflows/python-package-conda.yml)
+[![Build and Test](https://github.com/ArlindNocaj/document-barcodes/actions/workflows/ci.yml/badge.svg)](https://github.com/ArlindNocaj/document-barcodes/actions/workflows/ci.yml)
 
 # Intro
 
@@ -27,12 +27,12 @@ The approach works as follows:
 # Quick start 
 
 Required:
-* Java 8
+* Java 8+
 
 Install package
-  
+   
 ```
-pip install docbarcodes
+uv tool install docbarcodes
 ```
 
 Download example pdf document
@@ -110,6 +110,17 @@ barcodes_raw, barcodes_combined = process_document("./SalarySinglePage.pdf")
 print(barcodes_raw)
 print(barcodes_combined)
 ```
+
+## Development
+
+Use `uv` for local development and testing:
+
+```shell
+uv sync --extra dev
+uv run pytest
+```
+
+If `jpype1` needs to build from source on your platform, install Apache Ant alongside Java before running `uv sync`.
 
 # FAQ
 

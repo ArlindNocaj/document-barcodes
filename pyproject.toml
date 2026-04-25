@@ -1,0 +1,56 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "docbarcodes"
+version = "1.1.0"
+description = "Docbarcodes extracts 1D and 2D barcodes from scanned PDF documents or images."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { file = "LICENSE" }
+authors = [
+  { name = "Arlind Nocaj", email = "nocaja.r@gmail.com" },
+]
+classifiers = [
+  "License :: OSI Approved :: Apache Software License",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3",
+]
+dependencies = [
+  "Pillow>=9.0.0",
+  "jpype1>=1.5.0",
+  "loguru>=0.6.0",
+  "numpy>=1.26.0",
+  "opencv-python>=4.10.0.84",
+  "pydantic>=1.10.7",
+  "pypdfium2>=4.0.0",
+  "typer>=0.4.0",
+  "zxingmod>=0.19",
+]
+
+[project.optional-dependencies]
+dev = [
+  "hypothesis>=6.31.6",
+  "pytest>=8.0.1",
+  "pytest-regressions>=2.4.1",
+]
+
+[project.urls]
+"Bug Tracker" = "https://github.com/ArlindNocaj/document-barcodes/issues"
+Homepage = "https://github.com/ArlindNocaj/document-barcodes"
+
+[project.scripts]
+docbarcodes = "docbarcodes.cli:app"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.packages.find]
+include = ["docbarcodes*"]
+
+[tool.setuptools.package-data]
+"docbarcodes.zxingjpype" = ["jars/*.jar"]

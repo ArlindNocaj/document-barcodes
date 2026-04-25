@@ -17,11 +17,9 @@ jobs:
         uses: astral-sh/setup-uv@v5
         with:
           python-version: '3.12'
-          activate-environment: true
       - name: Build a binary wheel and a source tarball
         run: |
-          uv pip install build
-          python -m build --sdist --wheel --outdir dist/ .
+          uv build
 #       - name: Publish distribution 📦 to Test PyPI
 #         uses: pypa/gh-action-pypi-publish@master
 #         with:

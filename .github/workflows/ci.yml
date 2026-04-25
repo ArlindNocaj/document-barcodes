@@ -1,0 +1,54 @@
+name: CI build
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, macos-latest, windows-latest]
+        python-version: ['3.12']
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Set up Java
+      uses: actions/setup-java@v4
+      with:
+        distribution: temurin
+        java-version: "17"
+
+    - name: Install Ant on Linux
+      if: runner.os == 'Linux'
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y ant
+
+    - name: Install Ant on macOS
+      if: runner.os == 'macOS'
+      run: brew install ant
+
+    - name: Install Ant on Windows
+      if: runner.os == 'Windows'
+      run: choco install ant -y
+
+    - name: Install uv
+      uses: astral-sh/setup-uv@v5
+      with:
+        python-version: ${{ matrix.python-version }}
+        enable-cache: true
+
+    - name: Sync dependencies
+      run: |
+        uv sync --locked --extra dev
+
+    - name: Test with pytest
+      run: |
+        uv run pytest
