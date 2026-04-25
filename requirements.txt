@@ -1,9 +1,0 @@
-pypdfium2>=4.0.0
-Pillow>=9.0.0
-opencv-python-headless>=4.10.0.84
-loguru>=0.6.0
-zxingmod>=0.19
-pydantic>=1.10.7
-jpype1>=1.5.0
-typer>=0.4.0
-numpy>=1.26.0
