@@ -1,5 +1,7 @@
 import os
 import re
+import pathlib
+import subprocess as sp
 from collections import namedtuple
 from pathlib import Path
 
@@ -61,7 +63,86 @@ def _safe_parse(cls, zxing_output):
     return cls(uri, format, type, raw, parsed, points)
 
 
+def _safe_decode(self, filenames, try_harder=False, possible_formats=None, pure_barcode=False, products_only=False):
+    possible_formats = (possible_formats,) if isinstance(possible_formats, str) else possible_formats
+
+    if isinstance(filenames, str):
+        one_file = True
+        filenames = (filenames,)
+    else:
+        one_file = False
+
+    file_uris = [pathlib.Path(f).absolute().as_uri() for f in filenames]
+    cmd = [
+        self.java,
+        "-Dfile.encoding=ISO-8859-1",
+        "-cp",
+        self.classpath,
+        self.cls,
+        *file_uris,
+    ]
+    if try_harder:
+        cmd.append("--try_harder")
+    if pure_barcode:
+        cmd.append("--pure_barcode")
+    if products_only:
+        cmd.append("--products_only")
+    if possible_formats:
+        for barcode_format in possible_formats:
+            cmd += ["--possible_formats", barcode_format]
+
+    try:
+        process = sp.Popen(cmd, stdout=sp.PIPE, stderr=sp.STDOUT, universal_newlines=False)
+    except FileNotFoundError as error:
+        raise zxing.BarCodeReaderException(
+            "Java binary specified (%s) does not exist" % self.java,
+            self.java,
+            error,
+        )
+    except PermissionError as error:
+        raise zxing.BarCodeReaderException(
+            "Java binary specified (%s) is not executable" % self.java,
+            self.java,
+            error,
+        )
+
+    stdout, _ = process.communicate()
+
+    if stdout.startswith((
+        b"Error: Could not find or load main class com.google.zxing.client.j2se.CommandLineRunner",
+        b'Exception in thread "main" java.lang.NoClassDefFoundError:',
+    )):
+        raise zxing.BarCodeReaderException("Java JARs not found in classpath (%s)" % self.classpath, self.classpath)
+    elif stdout.startswith((
+        b'''Exception in thread "main" javax.imageio.IIOException: Can't get input stream from URL!''',
+        b'''Exception in thread "main" java.util.concurrent.ExecutionException: javax.imageio.IIOException: Can't get input stream from URL!''',
+    )):
+        raise zxing.BarCodeReaderException("Could not find image path: %s" % filenames, filenames)
+    elif stdout.startswith(b'''Exception in thread "main" java.io.IOException: Could not load '''):
+        raise zxing.BarCodeReaderException("Java library could not read image; is it in a supported format?", filenames)
+    elif stdout.startswith(b'''Exception '''):
+        raise zxing.BarCodeReaderException("Unknown Java exception: %s" % stdout)
+    elif process.returncode:
+        raise zxing.BarCodeReaderException("Unexpected Java subprocess return code %d" % process.returncode, self.java)
+
+    block_prefixes = (b"file:///", b"Exception")
+    file_results = []
+    for line in stdout.splitlines(True):
+        if line.startswith(block_prefixes):
+            file_results.append(line)
+        elif file_results:
+            file_results[-1] += line
+
+    codes = [zxing.BarCode.parse(result) for result in file_results]
+    if one_file:
+        return codes[0] if codes else None
+
+    found_codes = {code.uri: code for code in codes if code is not None}
+    return [found_codes[file_uri] if file_uri in found_codes else None for file_uri in file_uris]
+
+
 zxing.BarCode.parse = _safe_parse
+zxing.BarCodeReader.decode = _safe_decode
 
 
 def extract_barcode(file_name, page_regions, tmp_dir="/tmp"):

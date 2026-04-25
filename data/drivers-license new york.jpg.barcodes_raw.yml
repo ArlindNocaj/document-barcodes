@@ -2,14 +2,14 @@
   num_candidate: 4
   page: 0
   points:
-  - - 1.4621
-    - 0.5464
-  - - 0.1429
-    - 0.545
-  - - 0.144
-    - 0.3861
-  - - 1.4632
-    - 0.3868
+  - - 1.46
+    - 0.55
+  - - 0.14
+    - 0.55
+  - - 0.14
+    - 0.39
+  - - 1.46
+    - 0.39
   raw: "@\x1C\n\n\nANSI 6360260101DL00280217 DAQ123 654 789\n DAAWILLIAM F SMITH\n\
     \ DABSMITH\n DACWILLIAM F\n DAG224 MARTHA AVE\n DAIATHENS\n DAJNY\n DAK14215\n\
     \ DBB19690501\n DBA20220501\n DAU5-08\n DAW195\n DAZBRN\n DAYBRN\n DBC1\n DBHN\n\
