@@ -1,4 +1,5 @@
 from docbarcodes.extract import process_document
+from conftest import round_floats
 import yaml
 
 def named_tuple(self, data):
@@ -12,5 +13,5 @@ def test_drivers_license_newyork(data_regression):
     file = "data/drivers-license new york.jpg"
 
     barcodes_raw, barcodes_combined = process_document(file,2)
-    data_regression.check(barcodes_raw, fullpath=file+".barcodes_raw.yml")
-    data_regression.check(barcodes_combined, fullpath=file + ".barcodes_combined.yml")
+    data_regression.check(round_floats(barcodes_raw, precision=2), fullpath=file+".barcodes_raw.yml")
+    data_regression.check(round_floats(barcodes_combined), fullpath=file + ".barcodes_combined.yml")

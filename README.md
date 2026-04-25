@@ -1,4 +1,4 @@
-[![Build and Test](https://github.com/ArlindNocaj/document-barcodes/actions/workflows/python-package-conda.yml/badge.svg)](https://github.com/ArlindNocaj/document-barcodes/actions/workflows/python-package-conda.yml)
+[![Build and Test](https://github.com/ArlindNocaj/document-barcodes/actions/workflows/ci.yml/badge.svg)](https://github.com/ArlindNocaj/document-barcodes/actions/workflows/ci.yml)
 
 # Intro
 
@@ -27,12 +27,12 @@ The approach works as follows:
 # Quick start 
 
 Required:
-* Java 8
+* Java 8+
 
 Install package
-  
+   
 ```
-pip install docbarcodes
+uv tool install docbarcodes
 ```
 
 Download example pdf document
@@ -111,14 +111,20 @@ print(barcodes_raw)
 print(barcodes_combined)
 ```
 
-# FAQ
+## Development
 
-On Windows only: If you have problems with the installation of package dependencies, I recommend using `conda` to install java and poppler
+Use `uv` for local development and testing:
 
 ```shell
-conda install -y -c conda-forge jpype1=1.3.0
-conda install -c conda-forge poppler=21
+uv sync --extra dev
+uv run pytest
 ```
+
+If `jpype1` needs to build from source on your platform, install Apache Ant alongside Java before running `uv sync`.
+
+# FAQ
+
+PDF rendering is handled by `pypdfium2`, which bundles its own PDFium binary — no external poppler installation is required.
 
 
 # Show package licenses

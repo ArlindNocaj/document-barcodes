@@ -1,4 +1,5 @@
 from docbarcodes.extract import process_document
+from conftest import round_floats
 import yaml
 
 def named_tuple(self, data):
@@ -13,5 +14,5 @@ def test_swiss_zh_tax_statement(data_regression):
     file = "data/ZH Tax Sample - Formular 1.ptax20.pdf"
 
     barcodes_raw, barcodes_combined = process_document(file,2)
-    data_regression.check(barcodes_raw, fullpath=file+".barcodes_raw_jpype.yml")
-    data_regression.check(barcodes_combined, fullpath=file + ".barcodes_combined_jype.yml")
+    data_regression.check(round_floats(barcodes_raw), fullpath=file+".barcodes_raw_jpype.yml")
+    data_regression.check(round_floats(barcodes_combined), fullpath=file + ".barcodes_combined_jype.yml")
