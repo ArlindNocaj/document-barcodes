@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "docbarcodes"
-version = "1.1.0"
+version = "1.1.1"
 description = "Docbarcodes extracts 1D and 2D barcodes from scanned PDF documents or images."
 readme = "README.md"
 requires-python = ">=3.9"
