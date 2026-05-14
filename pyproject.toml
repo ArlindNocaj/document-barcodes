@@ -1,10 +1,10 @@
 [build-system]
-requires = ["setuptools>=77"]
+requires = ["setuptools==80.9.0"]
 build-backend = "setuptools.build_meta"
 
 [project]
 name = "docbarcodes"
-version = "1.1.4"
+version = "1.1.5"
 description = "Docbarcodes extracts 1D and 2D barcodes from scanned PDF documents or images."
 readme = "README.md"
 requires-python = ">=3.9"
@@ -18,22 +18,54 @@ classifiers = [
   "Programming Language :: Python :: 3",
 ]
 dependencies = [
-  "Pillow>=9.0.0",
-  "jpype1>=1.5.0",
-  "loguru>=0.6.0",
-  "numpy>=1.26.0",
-  "opencv-python-headless>=4.10.0.84",
-  "pydantic>=1.10.7",
-  "pypdfium2>=4.0.0",
-  "typer>=0.4.0",
-  "zxingmod>=0.19",
+  "annotated-doc==0.0.4",
+  "annotated-types==0.7.0",
+  "click==8.1.8; python_full_version < '3.10'",
+  "click==8.3.3; python_full_version >= '3.10'",
+  "colorama==0.4.6; sys_platform == 'win32'",
+  "jpype1==1.7.1",
+  "loguru==0.7.3",
+  "markdown-it-py==3.0.0; python_full_version < '3.10'",
+  "markdown-it-py==4.0.0; python_full_version >= '3.10'",
+  "mdurl==0.1.2",
+  "numpy==2.0.2; python_full_version < '3.10'",
+  "numpy==2.2.6; python_full_version == '3.10.*'",
+  "numpy==2.4.4; python_full_version >= '3.11'",
+  "opencv-python-headless==4.13.0.92",
+  "packaging==26.2",
+  "Pillow==11.3.0; python_full_version < '3.10'",
+  "Pillow==12.2.0; python_full_version >= '3.10'",
+  "pydantic==2.13.4",
+  "pydantic-core==2.46.4",
+  "pygments==2.20.0",
+  "pypdfium2==5.8.0",
+  "rich==15.0.0",
+  "shellingham==1.5.4",
+  "typer==0.23.2; python_full_version < '3.10'",
+  "typer==0.24.2; python_full_version >= '3.10'",
+  "typing-extensions==4.15.0",
+  "typing-inspection==0.4.2",
+  "win32-setctime==1.2.0; sys_platform == 'win32'",
+  "zxingmod==0.19",
 ]
 
 [project.optional-dependencies]
 dev = [
-  "hypothesis>=6.31.6",
-  "pytest>=8.0.1",
-  "pytest-regressions>=2.4.1",
+  "attrs==26.1.0; python_full_version < '3.10'",
+  "exceptiongroup==1.3.1; python_full_version < '3.11'",
+  "hypothesis==6.141.1; python_full_version < '3.10'",
+  "hypothesis==6.152.2; python_full_version >= '3.10'",
+  "iniconfig==2.1.0; python_full_version < '3.10'",
+  "iniconfig==2.3.0; python_full_version >= '3.10'",
+  "pluggy==1.6.0",
+  "pytest==8.4.2; python_full_version < '3.10'",
+  "pytest==9.0.3; python_full_version >= '3.10'",
+  "pytest-datadir==1.8.0",
+  "pytest-regressions==2.8.3; python_full_version < '3.10'",
+  "pytest-regressions==2.10.0; python_full_version >= '3.10'",
+  "pyyaml==6.0.3",
+  "sortedcontainers==2.4.0",
+  "tomli==2.4.1; python_full_version < '3.11'",
 ]
 
 [project.urls]
