@@ -4,16 +4,16 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "docbarcodes"
-version = "1.1.3"
+version = "1.1.4"
 description = "Docbarcodes extracts 1D and 2D barcodes from scanned PDF documents or images."
 readme = "README.md"
 requires-python = ">=3.9"
-license = { file = "LICENSE" }
+license = "Apache-2.0"
+license-files = ["LICENSE"]
 authors = [
   { name = "Arlind Nocaj", email = "nocaja.r@gmail.com" },
 ]
 classifiers = [
-  "License :: OSI Approved :: Apache Software License",
   "Operating System :: OS Independent",
   "Programming Language :: Python :: 3",
 ]

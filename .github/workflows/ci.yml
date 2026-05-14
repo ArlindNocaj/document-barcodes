@@ -17,10 +17,10 @@ jobs:
         python-version: ['3.12']
 
     steps:
-    - uses: actions/checkout@v4
+    - uses: actions/checkout@v6
 
     - name: Set up Java
-      uses: actions/setup-java@v4
+      uses: actions/setup-java@v5
       with:
         distribution: temurin
         java-version: "17"
@@ -40,7 +40,7 @@ jobs:
       run: choco install ant -y
 
     - name: Install uv
-      uses: astral-sh/setup-uv@v5
+      uses: astral-sh/setup-uv@v7
       with:
         python-version: ${{ matrix.python-version }}
         enable-cache: true
