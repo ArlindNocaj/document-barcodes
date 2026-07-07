@@ -43,7 +43,7 @@ dependencies = [
   "shellingham==1.5.4",
   "typer==0.23.2; python_full_version < '3.10'",
   "typer==0.24.2; python_full_version >= '3.10'",
-  "typing-extensions==4.15.0",
+  "typing-extensions==4.16.0",
   "typing-inspection==0.4.2",
   "win32-setctime==1.2.0; sys_platform == 'win32'",
   "zxingmod==0.19",
