@@ -116,9 +116,23 @@ print(barcodes_combined)
 Use `uv` for local development and testing:
 
 ```shell
-uv sync --extra dev
-uv run pytest
+uv sync --locked --extra dev
+uv run --locked --extra dev pytest
+uv build
 ```
+
+CI tests and builds distributions on Python 3.9 through 3.14 on Linux, macOS,
+and Windows. To test a specific version locally, pass `--python` to each command
+to override the default in `.python-version`:
+
+```shell
+uv sync --locked --extra dev --python 3.9
+uv run --locked --extra dev --python 3.9 pytest
+uv build --python 3.9
+```
+
+Python 3.9 uses setuptools 80.9.0; newer Python versions use setuptools 84.2.1,
+which requires Python 3.10 or later.
 
 If `jpype1` needs to build from source on your platform, install Apache Ant alongside Java before running `uv sync`.
 
