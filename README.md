@@ -27,6 +27,7 @@ The approach works as follows:
 # Quick start 
 
 Required:
+* Python 3.10+
 * Java 8+
 
 Install package
@@ -116,8 +117,19 @@ print(barcodes_combined)
 Use `uv` for local development and testing:
 
 ```shell
-uv sync --extra dev
-uv run pytest
+uv sync --locked --extra dev
+uv run --locked --extra dev pytest
+uv build
+```
+
+CI tests and builds distributions on Python 3.10 through 3.14 on Linux, macOS,
+and Windows. To test a specific version locally, pass `--python` to each command
+to override the default in `.python-version`:
+
+```shell
+uv sync --locked --extra dev --python 3.10
+uv run --locked --extra dev --python 3.10 pytest
+uv build --python 3.10
 ```
 
 If `jpype1` needs to build from source on your platform, install Apache Ant alongside Java before running `uv sync`.
