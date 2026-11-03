@@ -51,7 +51,7 @@ dev = [
   "hypothesis==6.165.10",
   "iniconfig==2.3.0",
   "pluggy==1.6.0",
-  "pytest==9.1.1",
+  "pytest==9.2.0",
   "pytest-datadir==1.8.0",
   "pytest-regressions==2.11.0",
   "pyyaml==6.0.3",
